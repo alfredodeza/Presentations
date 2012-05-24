@@ -1,0 +1,570 @@
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set background=light
+POSERO>> set nocursorline
+POSERO>> colorscheme morning
+POSERO>> Focus
+POSERO>> set nonumber
+
+
+
+
+                                                                                          
+              ,,                                                     ,,                   
+`7MMF'   `7MF'db                         .M"""bgd                    db             mm    
+  `MA     ,V                            ,MI    "Y                                   MM    
+   VM:   ,V `7MM  `7MMpMMMb.pMMMb.      `MMb.      ,p6"bo `7Mb,od8 `7MM `7MMpdMAo.mmMMmm  
+    MM.  M'   MM    MM    MM    MM        `YMMNq. 6M'  OO   MM' "'   MM   MM   `Wb  MM    
+    `MM A'    MM    MM    MM    MM      .     `MM 8M        MM       MM   MM    M8  MM    
+     :MM;     MM    MM    MM    MM      Mb     dM YM.    ,  MM       MM   MM   ,AP  MM    
+      VF    .JMML..JMML  JMML  JMML.    P"Ybmmd"   YMbmd' .JMML.   .JMML. MMbmmd'   `Mbmo 
+                                                                          MM              
+                                                                        .JMML.            
+
+                                                                         From 0 to Plugin
+                                                                           ____ ____ ____ ____ 
+                                                                         ||h |||j |||k |||l ||
+                                                                         ||__|||__|||__|||__||
+                                                                         |/__\|/__\|/__\|/__\|
+                                                          
+
+
+Alfredo Deza
+May 2012
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+Word of warning...
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+                                     MMMMMMMMMMMMMM~~~MMDATAGROKDATAGROKDATAGROK
+                                   MMMMMMMMM       ~~~~~MMDATAGROKDATAGROKDATAGD
+                                 MMMMMMM             ~~~~MMDATAGROKDATAGROKDDATD
+                               MMMMMMM                ~~~~~MDATAGDDATAGROKDATAGR
+                              MMMMM                    ~~~~~MDATAGROKDATAGROKDAT
+MMMMMMMMM                      MMM                      ~~~~MMDATAGROKDATAGROKDA
+MMMMMMMMMMMMM                                             ~~~MMDATAGROKDATAGROKD
+MMMMMMMMMMMMMM                                             ~~~MMDATAGROKDATAGROK
+          MMM                             MMMMMMMMMMM       ~~~MDATAGROKDATAGROK
+                                        MM    MM     MMM     ~~~MDATAGROKDATAGDA
+                                      MM   MMMMMMMMMM   M    ~~~MMDATAGROKDATAGD
+                                     MM  MM MMMMMMMMMM  MM    ~~~MDATAGROKDATAGD
+                                    M   MMMMMM     MMMM  MM    ~~MMDATAGROKDATAI
+  MMMMMM                           MM  MMMMMMMMM    MMMM  M    ~~~MDATAGROKDATAI
+M        MMM                       M  MMMMMMMMMMMMMMMMMM  MM   ~~~~MDATAGROKDATA
+ MM   MM    MM                    MM  MMMMMMMMMMMMMMMMMMM  M   ~~~~MDATAGROKDATA
+MMMMMMMMMM    M                   M   MMMMMMMMMMMMM MMMMM  M    ~~~MDATAGROKDATA
+ MMMM  MMMM    M                  M   MMMMMMMMMMMMM    MM  M    ~~~MMDATAGROKDAT
+MMMMM     MMM   M                 M   MMMM   MMMMM M  MMM  M    ~~~~MDATAGROKDAT
+MMMMMMMM    MM  MM                MM  MMM MMMMMMMMMMMMMM  MM     ~~~MDATAGROKDAT
+MMMMMMMMMMMMMMM  M                 M  MMMMMMMMMMMMMMMM    M      ~~~MDATAGROKDAT
+MMMMMMMMMMM MMM  M                 MM  MMMMMMMMMMMMMM    M       ~~~MMDATAGROKDA
+MMMMMMMMMMMM MM  M                   M   MMMMMM MMM    M         ~~~~MDATAGROKDA
+MMMMMMMMMMM   M  M                    MM            MMM : ::      ~~~MDATAGROKDA
+MMMMMMMMMMMMM M  M                       MMMMMMMMMM ::::::::      ~~~MDATAGROKDA
+M    MMMMMMMMM   M                            :~::::::~~~~~~~     ~~~MDATAGROKDA
+  MMMMMMMMMMM   M                           ~:::::~~~~~~~~:       ~~~MDATAGROKDA
+MMMMMMMMMMMM   M                            :::~~~~~~:::::        ~~~MDATAGROKDA
+MMMMMM       MM                            :~~~~~:~:::::          ~~~MDATAGROKDA
+          MMM                              ~~~:::::               ~~~MDATAGROKDA
+  MMMMMMM   :::~                                                  ~~~MDATAGROKDA
+     ~ :::::~~~~                                                 ~~~~MDATAGROKDA
+                                                               ~~~~~MDATAGROKDAT
+                                                               ~~~~MMDATAGROKDAT
+                                      MMMMMMMMMMM              ~~~~MDATAGROKDATD
+                                 MMMMMMMMMMMMMMMMMM           ~~~~M++DATAGROKDAT
+                               MMMMMMMMMMMMMMMMMMMM          ~~~~MM+++DATAGROKDA
+                             MMMMMMMMMMMMMMMMMMMMM           ~~~~M++++++DATAGROK
+                           MMMMMMMMMMMMMMMMMMMMMM           ~~~~M+++++++++DATAGD
+                          MMMMMMMMMMMMMMMMMMM              ~~~~MM++++++++++DATAG
+                          MMMMMMMMMMMM                    ~~~~~M+++++++++++++DAT
+                           MMMMMMMM                      ~~~~~MI++++++++++++++DA
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+                                   ~MMMMMMMMMMMMMMMM                            
+                              $MO           MM  MMZ MM                          
+                        NMMMMMMMMMMMMMN:   ~MZMMM     NM                        
+                      MMM                +MMDMM MM      M                       
+                    MMM                  =$MMMMZ         M:                     
+                MMM.                 MMMMMMMM:             MZ                   
+              ,?MM                M  MMMMMM M               MM                  
+            MMMM.            MM~    7MMMMMMII   M7    M8     M                  
+         MMMMMMMMD        NM        MMMMMM?M  ?M     IMMM     M~                
+           MMM   MMMMMMM            MMMMMM   M       M   MM   DMN               
+          MM        .MMMMM        M  MMMNM  M        M    MM   MMM              
+       OMM7            .MM        ~M MMM   M         M     MN$  M $~            
+       MM                MM     M  M  MM  M           MMMMM  +I  M Z            
+      MM            NMMM, MM     M =M MM  M                   N= MI             
+     MMM        MM       :MMM$   .M    M  M                    M  MM            
+      M:      MM           M:MM   ,       D                     D  MM           
+      M      MN$MN          M  M:          M                    M  .MM          
+   , M$     M    :D           = M           M                   8   M.M         
+   MMM      M     M             M             N                M     M M        
+   MM=      M     M             N              +M            M=       MM        
+   MM       MMMMMO             M   $M$    ,M8.MM ~MMMMMMMMM8          MM        
+   MM       M                ?M  MMM       M     MM:                  MM?       
+   M        M               MI  M   M      M    M:   M.                MM       
+   M         M             M  MM    MMM    M MMM       $M OM~          :M       
+   M D        M          DM  MM      MM MN M                 M          M:      
+   M D          M$.    NM    MM       M                       8M         M      
+   M.N                      IM MM     M                         M        M      
+   M=M                      M   M:                              ,M       M      
+   MDM                      MM                     .M, ?M         I:     M      
+   MMM                      M                    DM     D          M     M      
+   MMM                      M             =M  MMN       M   MMM.   M     M      
+   ~MMZ               M     M           $N              M  O    M  I     M      
+    MMM               M:    M          N.           MN M: MM     DM      M      
+    MMM8              M    8          Z,    MMMMMMM,  M    N.     M      M      
+     MMM              M    M         .M        M   MNM     ~MM8 .M       M      
+     OMMM           ?+    M          M       IO     8MMO                 MM     
+      MMM          I M   $M          M       M    ZM                     MM     
+      MMM          M     M           MNM  M M  .M,                       M      
+       MMD         M    M            M     Z M=   MMD$Z.               MMO      
+        MM+        M    M           M      M    M,  M                 MMMM      
+        MMM.       M    M  ZM =M   M     M.   ~M  MD                  MMM       
+         MMMO           +MM      MM    MZ     M  M7                  OMM        
+        MMMMMM             MMMZMN   8MN      M                       MM         
+          MMMMMZ              =MMMMM        8~                      MMM         
+           M8    ,MMM                                              MM           
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=vim
+POSERO>> let b:posero_push_on_non_fake = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_fake_type = '\v^("|$)@!'
+
+
+
+" Now Plugins...
+" How do they work?
+
+" Like functions in your .vimrc of course!
+
+function! Foo()
+    echo "this is the Foo function"
+endfunction
+
+" To call this on any vim session:
+
+:call Foo()
+this is the Foo function
+
+" That is a horrible way to call something
+" lets make it better
+
+command! Foo :call Foo()
+
+" So to call that function now all we need is
+
+:Foo
+this is the Foo function
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=rst
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+Functions are like Plugins
+==========================
+
+* We define a callable
+
+* Add some behavior
+
+* make a proper mapping to it
+
+* And call it however we want
+
+
+**BUT THIS IS NOT PORTABLE DAMMIT**
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_on_non_fake = 1
+POSERO>> set filetype=rst
+
+
+It all starts with **structure**
+--------------------------------
+
+::
+
+    |-- autoload
+    |-- bundle
+    |-- doc
+    |-- colors
+    |-- ftplugin
+    `-- plugin 
+
+
+How does our `Foo()` function gets to be a plugin
+--------------------------------------------------
+
+We create a new file: `foo.vim` in `.vim/plugin` ::
+
+    |
+    `-- plugin 
+        |
+        `-- foo.vim
+
+
+What should it contain?
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=vim
+POSERO>> set number
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+" File:        foo.vim
+" Description: An awesome plugin that does very little
+" Maintainer:  Alfredo Deza <alfredodeza AT gmail.com>
+" License:     Proprietary
+"============================================================================
+
+function! s:Foo()
+    echo "this is the Foo function"
+endfunction
+
+
+command! Foo call s:Foo()
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set nonumber
+POSERO>> set filetype=rst
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+* Plugins can be for certain filetypes
+* or autoload
+* or have custom directories
+
+
+For all that and much more, there is Pathogen (easy plugin management)::
+
+    https://github.com/tpope/vim-pathogen
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=txt
+POSERO>> set nonumber
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+Now lets dive into this plugin internals...
+
+
+                                                                                         
+                                                                   ,,                    
+`7MM"""Mq.                                                         db                    
+  MM   `MM.                                                                              
+  MM   ,M9 ,pW"Wq.  ,pP"Ybd  .gP"Ya `7Mb,od8 ,pW"Wq.  `7M'   `MF'`7MM  `7MMpMMMb.pMMMb.  
+  MMmmdM9 6W'   `Wb 8I   `" ,M'   Yb  MM' "'6W'   `Wb   VA   ,V    MM    MM    MM    MM  
+  MM      8M     M8 `YMMMa. 8M""""""  MM    8M     M8    VA ,V     MM    MM    MM    MM  
+  MM      YA.   ,A9 L.   I8 YM.    ,  MM    YA.   ,A9 ,,  VVV      MM    MM    MM    MM  
+.JMML.     `Ybmd9'  M9mmmP'  `Mbmmd'.JMML.   `Ybmd9'  db   W     .JMML..JMML  JMML  JMML.
+
+http://github.com/alfredodeza/posero.vim                                                                                         
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set number
+POSERO>> set filetype=vim
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+
+"
+" Mapping the command for our presentation plugin
+"
+
+
+command! -nargs=+ -complete=file Posero call s:Proxy(<f-args>)
+
+function! s:Proxy(action)
+    if filereadable(a:action)
+        call s:SetGlobals()
+        call s:LoadFile(a:action)
+        call s:CreateBuffer()
+        call s:SourceOptions()
+        call s:SetSyntax()
+        call s:SetStatusLine()
+        call s:AutoNextLine()
+    elseif (a:action == "version")
+        call s:Version()
+    else
+        call s:Echo("Posero: not a valid file or option ==> " . a:action)
+    endif
+endfunction
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=vim
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+
+" 
+" Global variables 
+" 
+
+
+function! s:SetGlobals() abort
+    " Globals
+    let g:posero_presentation = {}
+    let g:posero_current_slide = 1
+    let g:posero_current_line = 1
+    let g:posero_total_slides = 1
+endfunction
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=vim
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+
+" 
+" The meat of the plugin.
+" It will: parse it, define slides, numbers, lines and options 
+" Datastructures in Vim!
+"
+
+
+function! s:LoadFile(file_path)
+    let contents = readfile(a:file_path)
+    let content_len = len(contents)
+    let slide_number = 1
+    let line_number = 1
+    let new_presentation = {}
+    let slide = {}
+    let slide_options = []
+    let loop_count = 0
+    for line in contents
+        let loop_count = loop_count + 1
+        if line =~ '\v^\>{79,}' || (loop_count == content_len)
+            if (loop_count == content_len)
+                let slide[line_number] = line
+                let g:posero_total_slides = g:posero_total_slides
+            else
+                let g:posero_total_slides = g:posero_total_slides + 1
+            endif
+            let slide["options"] = slide_options
+            let new_presentation[slide_number] = slide
+            let line_number = 1
+            let slide_number = slide_number + 1
+            let slide = {}
+            let slide_options = []
+        elseif line =~ '\v^POSERO\>\>'
+            let sourceable_line = split(line, "POSERO>>")[0]
+            call add(slide_options, sourceable_line)
+        else
+            let slide[line_number] = line
+            let line_number = line_number + 1
+        endif
+    endfor
+    let g:posero_presentation =  new_presentation
+endfunction
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=vim
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+
+"
+" Checking for user options, and setting mappings for
+" our newly created scratch buffer
+"
+"
+
+
+function! s:CreateBuffer()
+    enew
+	setlocal buftype=nowrite bufhidden=wipe nobuflisted noswapfile nowrap number
+    if exists("g:posero_default_mappings")
+        if g:posero_default_mappings == 1
+            nnoremap <silent> <buffer> <C-h> :call posero#PreviousSlide()<CR>
+            nnoremap <silent> <buffer> <C-l> :call posero#NextSlide()<CR>
+            nnoremap <silent> <buffer> <C-j> :call posero#NextLine()<CR>
+            nnoremap <silent> <buffer> <C-k> :call posero#PreviousLine()<CR>
+        endif
+    else
+        call s:Echo("Posero has no current mappings for flow control! Use `let g:posero_default_mappings = 1` in your .vimrc")
+    endif
+endfunction
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=vim
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+
+"
+" Executing options and try/except blocks. 
+" Surprise, surprise
+"
+
+function! s:SourceOptions()
+    for line in get(g:posero_presentation[g:posero_current_slide], "options", [])
+        try
+            execute line
+        catch /(.*)/
+            let msg = "Exception raised: " . v:exception . " Executing line >> " . line
+            call s:Echo(msg)
+        endtry
+    endfor
+endfunction
+
+" wait. was that a regular expression to catch an exception?
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=text
+POSERO>> set nonumber
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+                                                                                
+                                   ~MMMMMMMMMMMMMMMM                            
+                              $MO           MM  MMZ MM                          
+                        NMMMMMMMMMMMMMN:   ~MZMMM     NM                        
+                      MMM                +MMDMM MM      M                       
+                    MMM                  =$MMMMZ         M:                     
+                MMM.                 MMMMMMMM:             MZ                   
+              ,?MM                M  MMMMMM M               MM                  
+            MMMM.            MM~    7MMMMMMII   M7    M8     M                  
+         MMMMMMMMD        NM        MMMMMM?M  ?M     IMMM     M~                
+           MMM   MMMMMMM            MMMMMM   M       M   MM   DMN               
+          MM        .MMMMM        M  MMMNM  M        M    MM   MMM              
+       OMM7            .MM        ~M MMM   M         M     MN$  M $~            
+       MM                MM     M  M  MM  M           MMMMM  +I  M Z            
+      MM            NMMM, MM     M =M MM  M                   N= MI             
+     MMM        MM       :MMM$   .M    M  M                    M  MM            
+      M:      MM           M:MM   ,       D                     D  MM           
+      M      MN$MN          M  M:          M                    M  .MM          
+   , M$     M    :D           = M           M                   8   M.M         
+   MMM      M     M             M             N                M     M M        
+   MM=      M     M             N              +M            M=       MM        
+   MM       MMMMMO             M   $M$    ,M8.MM ~MMMMMMMMM8          MM        
+   MM       M                ?M  MMM       M     MM:                  MM?       
+   M        M               MI  M   M      M    M:   M.                MM       
+   M         M             M  MM    MMM    M MMM       $M OM~          :M       
+   M D        M          DM  MM      MM MN M                 M          M:      
+   M D          M$.    NM    MM       M                       8M         M      
+   M.N                      IM MM     M                         M        M      
+   M=M                      M   M:                              ,M       M      
+   MDM                      MM                     .M, ?M         I:     M      
+   MMM                      M                    DM     D          M     M      
+   MMM                      M             =M  MMN       M   MMM.   M     M      
+   ~MMZ               M     M           $N              M  O    M  I     M      
+    MMM               M:    M          N.           MN M: MM     DM      M      
+    MMM8              M    8          Z,    MMMMMMM,  M    N.     M      M      
+     MMM              M    M         .M        M   MNM     ~MM8 .M       M      
+     OMMM           ?+    M          M       IO     8MMO                 MM     
+      MMM          I M   $M          M       M    ZM                     MM     
+      MMM          M     M           MNM  M M  .M,                       M      
+       MMD         M    M            M     Z M=   MMD$Z.               MMO      
+        MM+        M    M           M      M    M,  M                 MMMM      
+        MMM.       M    M  ZM =M   M     M.   ~M  MD                  MMM       
+         MMMO           +MM      MM    MZ     M  M7                  OMM        
+        MMMMMM             MMMZMN   8MN      M                       MM         
+          MMMMMZ              =MMMMM        8~                      MMM         
+           M8    ,MMM                                              MM           
+                                                                 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=vim
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_on_non_fake = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+
+"
+" We can define our own syntax
+"
+
+function! s:PoseroSyntax() abort
+  let b:current_syntax = 'posero'
+  syn match PoseroDelimeter            '\v\>{70,}'
+  syn match PoseroOptions              '\v^POSERO\>\>'
+
+  hi def link PoseroDelimeter          Error
+  hi def link PoseroOptions            Statement
+endfunction
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=vim
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_fake_type = '\v^(")@!'
+
+
+" Making it easier for users to call functions
+" we define as *public*
+
+function! posero#NextSlide()
+    call s:NextSlide(g:posero_current_slide + 1)
+endfunction
+
+function! posero#PreviousSlide()
+    call s:PreviousSlide(g:posero_current_slide - 1)
+endfunction
+
+function! posero#NextLine()
+    call s:Next(g:posero_current_line + 1)
+endfunction
+
+function! posero#PreviousLine()
+    call s:Previous()
+endfunction
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=txt
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+                                                  ,,                                          
+  .g8""8q.                                 mm     db                                 ,M"""b.  
+.dP'    `YM.                               MM                                        89'  `Mg 
+dM'      `MM `7MM  `7MM  .gP"Ya  ,pP"Ybd mmMMmm `7MM  ,pW"Wq.`7MMpMMMb.  ,pP"Ybd          ,M9 
+MM        MM   MM    MM ,M'   Yb 8I   `"   MM     MM 6W'   `Wb MM    MM  8I   `"       mMMY'  
+MM.      ,MP   MM    MM 8M"""""" `YMMMa.   MM     MM 8M     M8 MM    MM  `YMMMa.       MM     
+`Mb.    ,dP'   MM    MM YM.    , L.   I8   MM     MM YA.   ,A9 MM    MM  L.   I8       ,,     
+  `"bmmd"'     `Mbod"YML.`Mbmmd' M9mmmP'   `Mbmo.JMML.`Ybmd9'.JMML  JMML.M9mmmP'       db     
+      MMb                                                                                     
+       `bood'  
+
+
+* Posero.vim:  http://github.com/alfredodeza/posero.vim
+* Pathogen:    http://github.com/tpope/vim-pathogen
+* :help script
