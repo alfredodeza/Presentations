@@ -336,514 +336,428 @@ POSERO>> let b:posero_auto_next_line = 1
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+
+    But, what about the hardware? What type of blackbox are we talking about?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> execute "normal zb"
+                                  .+hNMMMMMMNmhyy//ymdhyyyyyyyyyyyyyyyyyyyy
+                               .omMMMMmy+:.      `--:omdyyyyyyyyyyyyyyyysss
+                             :hMMMNy:`             `--:hmhyyssssoo+++//////
+ooooo+:-`                   `mMMd:                   `--oNo////////////////
+MMMMMMMMMmy+`                .s/                       .-/ms///////////////
+oo+++osydNMMh                           `-:/+o+/:`      .-:dy//////////////
+          --                         -oyo//+o+//++ss+`   .-:dh/////////////
+                                   .ho. /oNMMMMMMm+ -d/   .-:mh/////////+++
+                                  +h. oNNoNm/:/smMMy``d/   --:mhsssssssssss
+:shyyysso+:`                     +d`-hMMMMMMms-  +MMm `m/  `--/Nyssssssssss
+/-:. `:.`:+ys.                  -N` yMMMMMMMMMMNmMMMMy .N.  .--ymssssssssss
+ydMMNNMMNo` .yy.                os  hMMMMMMMMMMdhymmMN` d:   --+Nssssssssss
+hNMMm``:+hmo- :m-               oo  dMMNyooMMMMh-. yMM:`N.   .-:Nhsssssssss
+MMMMMNyo/..sMh -d`              :m``NMN+ydMMMMMMMMmMdo`yy    `--ymsssssssss
+MMMMMMMMMMNmMMs so               sy .dMMMMMMMMNMMMh- `yy`    `--/Nyysssssss
+MMMMMMMMMmN-shh :d                +d/`+hhyssy/oh+.`:ss-`      ---ddyyyyyyys
+MMMMMMMMMNyo`m: +d                 `:sso+/////+osss/.....`    .--oNyyyyyyyy
+hs/:yMMMMMMMmo .m/                     ``..--:-...-----:-`    .--/Nyyyyyyyy
+symMMMMMmNMh` -d/                        `....---:-----.      `--/Myyyyyyyy
+mMMMNho/:/``:yo`                        `.-:-----....`        `--/Myyyyyyyy
+....--:+osss/.`                         `.-..```              `--/Myyyyyyyy
++++///:-``.---:`                                              .--/Myyyyyyyy
+ `..------:---`                                               .--/Mosyyyyyy
+--------.....`                                                ---/Moooosyyy
+..........``                                                 `---sNooooooos
+  `` `                                                       .---mhoooooooo
+                                                             ---+Nooooooooo
+                                                            .--:dhooooooooo
+                                `:+oshddmmmmdho`           `--:dhoooooooooo
+                             -smMMMMMMMMMMMMMMMd           --:hh--/oooooooo
+                          .sNMMMMMMMMMMMMMMMMMM+          ---yh-...-/oooooo
+                         oMMMMMMMMMMMMMMNmdys/`          ---sd-......-:+ooo
+                        `mMMMMMMMNmy+:.                `---od-..........:+o
+                         `:///:-.                     .--:hdo:............:
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+
+
+
+
+    Easy to get started with ceph-deploy.
+
+    But *what* is ceph-deploy?
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+
+
+
+    CLI Tool that installs and configures a CEPH Cluster via SSH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+    Easy to get it installed
+    ------------------------
+
+
+    Repos:
+     ceph.com/rpm-{release}
+     ceph.com/debian-{release}
+
+    Python:
+     pip install ceph-deploy
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> set filetype=text
 POSERO>> let b:posero_push_on_non_fake = 1
 POSERO>> let b:posero_auto_next_line = 1
-POSERO>> let b:posero_fake_type = '\v^\('
+POSERO>> let b:posero_fake_type = '\v^\s+\$'
 POSERO>> let b:posero_fake_push = 1
 
-(ceph-deploy)papaya ~/tmp/foo ᓆ ceph-deploy new node1
-[ceph_deploy.cli][INFO  ] Invoked (1.4.0): /Users/alfredo/.virtualenvs/ceph-deploy/bin/ceph-deploy new node1
-[ceph_deploy.new][DEBUG ] Creating new cluster named ceph
-[ceph_deploy.new][DEBUG ] Resolving host node1
-[ceph_deploy.new][DEBUG ] Monitor node1 at 192.168.111.100
-[ceph_deploy.new][INFO  ] making sure passwordless SSH succeeds
-[node1][DEBUG ] connected to host: papaya.local
-[node1][INFO  ] Running command: ssh -CT -o BatchMode=yes node1
-[ceph_deploy.new][DEBUG ] Monitor initial members are ['node1']
-[ceph_deploy.new][DEBUG ] Monitor addrs are ['192.168.111.100']
-[ceph_deploy.new][DEBUG ] Creating a random mon key...
-[ceph_deploy.new][DEBUG ] Writing initial config to ceph.conf...
-[ceph_deploy.new][DEBUG ] Writing monitor keyring to ceph.mon.keyring...
-(ceph-deploy)papaya ~/tmp/foo ᓆ ceph-deploy install node1
-[ceph_deploy.cli][INFO  ] Invoked (1.4.0): /Users/alfredo/.virtualenvs/ceph-deploy/bin/ceph-deploy install node1
-[ceph_deploy.install][DEBUG ] Installing stable version emperor on cluster ceph hosts node1
-[ceph_deploy.install][DEBUG ] Detecting platform for host node1 ...
-ssh: connect to host 192.168.111.100 port 22: Host is down
-[ceph_deploy][ERROR ] RuntimeError: connecting to host: node1 resulted in errors: HostNotFound node1
 
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
 
 
-
-
-Word of warning...
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-
-                                     MMMMMMMMMMMMMM~~~MMDFDFDFDFDFDFDFDFDFDFDFDF
-                                   MMMMMMMMM       ~~~~~MMDFDFDFDFDFDFDFDFDATAGD
-                                 MMMMMMM             ~~~~MMDFDFDFDFDFDFDFDFDDATD
-                               MMMMMMM                ~~~~~MDATAGDDFDFDFDFDATAGR
-                              MMMMM                    ~~~~~MDFDFDFDFDFDFDFDFDAT
-MMMMMMMMM                      MMM                      ~~~~MMDFDFDFDFDFDFDFDFDA
-MMMMMMMMMMMMM                                             ~~~MMDFDFDFDFDFDFDFDFD
-MMMMMMMMMMMMMM                                             ~~~MMDFDFDFDFDFDFDFDF
-          MMM                             MMMMMMMMMMM       ~~~MDFDFDFDFDFDFDFDF
-                                        MM    MM     MMM     ~~~MDFDFDFDFDATAGDA
-                                      MM   MMMMMMMMMM   M    ~~~MMDFDFDFDFDATAGD
-                                     MM  MM MMMMMMMMMM  MM    ~~~MDFDFDFDFDATAGD
-                                    M   MMMMMM     MMMM  MM    ~~MMDFDFDFDFDATAI
-  MMMMMM                           MM  MMMMMMMMM    MMMM  M    ~~~MDFDFDFDFDATAI
-M        MMM                       M  MMMMMMMMMMMMMMMMMM  MM   ~~~~MDFDFDFDFDATA
- MM   MM    MM                    MM  MMMMMMMMMMMMMMMMMMM  M   ~~~~MDFDFDFDFDATA
-MMMMMMMMMM    M                   M   MMMMMMMMMMMMM MMMMM  M    ~~~MDFDFDFDFDATA
- MMMM  MMMM    M                  M   MMMMMMMMMMMMM    MM  M    ~~~MMDFDFDFDFDAT
-MMMMM     MMM   M                 M   MMMM   MMMMM M  MMM  M    ~~~~MDFDFDFDFDAT
-MMMMMMMM    MM  MM                MM  MMM MMMMMMMMMMMMMM  MM     ~~~MDFDFDFDFDAT
-MMMMMMMMMMMMMMM  M                 M  MMMMMMMMMMMMMMMM    M      ~~~MDFDFDFDFDAT
-MMMMMMMMMMM MMM  M                 MM  MMMMMMMMMMMMMM    M       ~~~MMDFDFDFDFDA
-MMMMMMMMMMMM MM  M                   M   MMMMMM MMM    M         ~~~~MDFDFDFDFDA
-MMMMMMMMMMM   M  M                    MM            MMM : ::      ~~~MDFDFDFDFDA
-MMMMMMMMMMMMM M  M                       MMMMMMMMMM ::::::::      ~~~MDFDFDFDFDA
-M    MMMMMMMMM   M                            :~::::::~~~~~~~     ~~~MDFDFDFDFDA
-  MMMMMMMMMMM   M                           ~:::::~~~~~~~~:       ~~~MDFDFDFDFDA
-MMMMMMMMMMMM   M                            :::~~~~~~:::::        ~~~MDFDFDFDFDA
-MMMMMM       MM                            :~~~~~:~:::::          ~~~MDFDFDFDFDA
-          MMM                              ~~~:::::               ~~~MDFDFDFDFDA
-  MMMMMMM   :::~                                                  ~~~MDFDFDFDFDA
-     ~ :::::~~~~                                                 ~~~~MDFDFDFDFDA
-                                                               ~~~~~MDFDFDFDFDAT
-                                                               ~~~~MMDFDFDFDFDAT
-                                      MMMMMMMMMMM              ~~~~MDFDFDFDFDATD
-                                 MMMMMMMMMMMMMMMMMM           ~~~~M++DFDFDFDFDAT
-                               MMMMMMMMMMMMMMMMMMMM          ~~~~MM+++DFDFDFDFDA
-                             MMMMMMMMMMMMMMMMMMMMM           ~~~~M++++++DFDFDFDF
-                           MMMMMMMMMMMMMMMMMMMMMM           ~~~~M+++++++++DATAGD
-                          MMMMMMMMMMMMMMMMMMM              ~~~~MM++++++++++DATAG
-                          MMMMMMMMMMMM                    ~~~~~M+++++++++++++DAT
-                           MMMMMMMM                      ~~~~~MI++++++++++++++DA
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-
-                                   ~MMMMMMMMMMMMMMMM
-                              $MO           MM  MMZ MM
-                        NMMMMMMMMMMMMMN:   ~MZMMM     NM
-                      MMM                +MMDMM MM      M
-                    MMM                  =$MMMMZ         M:
-                MMM.                 MMMMMMMM:             MZ
-              ,?MM                M  MMMMMM M               MM
-            MMMM.            MM~    7MMMMMMII   M7    M8     M
-         MMMMMMMMD        NM        MMMMMM?M  ?M     IMMM     M~
-           MMM   MMMMMMM            MMMMMM   M       M   MM   DMN
-          MM        .MMMMM        M  MMMNM  M        M    MM   MMM
-       OMM7            .MM        ~M MMM   M         M     MN$  M $~
-       MM                MM     M  M  MM  M           MMMMM  +I  M Z
-      MM            NMMM, MM     M =M MM  M                   N= MI
-     MMM        MM       :MMM$   .M    M  M                    M  MM
-      M:      MM           M:MM   ,       D                     D  MM
-      M      MN$MN          M  M:          M                    M  .MM
-   , M$     M    :D           = M           M                   8   M.M
-   MMM      M     M             M             N                M     M M
-   MM=      M     M             N              +M            M=       MM
-   MM       MMMMMO             M   $M$    ,M8.MM ~MMMMMMMMM8          MM
-   MM       M                ?M  MMM       M     MM:                  MM?
-   M        M               MI  M   M      M    M:   M.                MM
-   M         M             M  MM    MMM    M MMM       $M OM~          :M
-   M D        M          DM  MM      MM MN M                 M          M:
-   M D          M$.    NM    MM       M                       8M         M
-   M.N                      IM MM     M                         M        M
-   M=M                      M   M:                              ,M       M
-   MDM                      MM                     .M, ?M         I:     M
-   MMM                      M                    DM     D          M     M
-   MMM                      M             =M  MMN       M   MMM.   M     M
-   ~MMZ               M     M           $N              M  O    M  I     M
-    MMM               M:    M          N.           MN M: MM     DM      M
-    MMM8              M    8          Z,    MMMMMMM,  M    N.     M      M
-     MMM              M    M         .M        M   MNM     ~MM8 .M       M
-     OMMM           ?+    M          M       IO     8MMO                 MM
-      MMM          I M   $M          M       M    ZM                     MM
-      MMM          M     M           MNM  M M  .M,                       M
-       MMD         M    M            M     Z M=   MMD$Z.               MMO
-        MM+        M    M           M      M    M,  M                 MMMM
-        MMM.       M    M  ZM =M   M     M.   ~M  MD                  MMM
-         MMMO           +MM      MM    MZ     M  M7                  OMM
-        MMMMMM             MMMZMN   8MN      M                       MM
-          MMMMMZ              =MMMMM        8~                      MMM
-           M8    ,MMM                                              MM
-
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set filetype=rst
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-
-
-Functions are like Plugins
-==========================
-
-* We define a callable
-
-* Add some behavior
-
-* make a proper mapping to it
-
-* And call it however we want
-
-
-**BUT THIS IS NOT PORTABLE DAMMIT**
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> let b:posero_auto_next_line = 1
-POSERO>> let b:posero_push_on_non_fake = 1
-POSERO>> set filetype=rst
-
-
-It all starts with **structure**
---------------------------------
-
-::
-
-    |-- autoload
-    |-- bundle
-    |-- doc
-    |-- colors
-    |-- ftplugin
-    `-- plugin
-
-
-How does our `Foo()` function gets to be a plugin
---------------------------------------------------
-
-We create a new file: `foo.vim` in `.vim/plugin` ::
-
-    |
-    `-- plugin
-        |
-        `-- foo.vim
-
-
-What should it contain?
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set filetype=vim
-POSERO>> set number
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
-
-" File:        foo.vim
-" Description: An awesome plugin that does very little
-" Maintainer:  Alfredo Deza <alfredodeza AT gmail.com>
-" License:     Proprietary
-"============================================================================
-
-function! s:Foo()
-    echo "this is the Foo function"
-endfunction
-
-
-command! Foo call s:Foo()
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set nonumber
-POSERO>> set filetype=rst
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-
-
-
-* Plugins can be for certain filetypes
-* or autoload
-* or have custom directories
-
-
-For all that and much more, there is Pathogen (easy plugin management)::
-
-    https://github.com/tpope/vim-pathogen
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set filetype=txt
-POSERO>> set nonumber
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-
-
-
-
-
-Now lets dive into this plugin internals...
-
-
-
-                                                                   ,,
-`7MM"""Mq.                                                         db
-  MM   `MM.
-  MM   ,M9 ,pW"Wq.  ,pP"Ybd  .gP"Ya `7Mb,od8 ,pW"Wq.  `7M'   `MF'`7MM  `7MMpMMMb.pMMMb.
-  MMmmdM9 6W'   `Wb 8I   `" ,M'   Yb  MM' "'6W'   `Wb   VA   ,V    MM    MM    MM    MM
-  MM      8M     M8 `YMMMa. 8M""""""  MM    8M     M8    VA ,V     MM    MM    MM    MM
-  MM      YA.   ,A9 L.   I8 YM.    ,  MM    YA.   ,A9 ,,  VVV      MM    MM    MM    MM
-.JMML.     `Ybmd9'  M9mmmP'  `Mbmmd'.JMML.   `Ybmd9'  db   W     .JMML..JMML  JMML  JMML.
-
-http://github.com/alfredodeza/posero.vim
-
-
-
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set number
-POSERO>> set filetype=vim
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
-
-
-"
-" Mapping the command for our presentation plugin
-"
-
-
-command! -nargs=+ -complete=file Posero call s:Proxy(<f-args>)
-
-function! s:Proxy(action)
-    if filereadable(a:action)
-        call s:SetGlobals()
-        call s:LoadFile(a:action)
-        call s:CreateBuffer()
-        call s:SourceOptions()
-        call s:SetSyntax()
-        call s:SetStatusLine()
-        call s:AutoNextLine()
-    elseif (a:action == "version")
-        call s:Version()
-    else
-        call s:Echo("Posero: not a valid file or option ==> " . a:action)
-    endif
-endfunction
-
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set filetype=vim
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
-
-
-"
-" Global variables
-"
-
-
-function! s:SetGlobals() abort
-    " Globals
-    let g:posero_presentation = {}
-    let g:posero_current_slide = 1
-    let g:posero_current_line = 1
-    let g:posero_total_slides = 1
-endfunction
-
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set filetype=vim
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
-
-
-"
-" The meat of the plugin.
-" It will: parse it, define slides, numbers, lines and options
-" Datastructures in Vim!
-"
-
-
-function! s:LoadFile(file_path)
-    let contents = readfile(a:file_path)
-    let content_len = len(contents)
-    let slide_number = 1
-    let line_number = 1
-    let new_presentation = {}
-    let slide = {}
-    let slide_options = []
-    let loop_count = 0
-    for line in contents
-        let loop_count = loop_count + 1
-        if line =~ '\v^\>{79,}' || (loop_count == content_len)
-            if (loop_count == content_len)
-                let slide[line_number] = line
-                let g:posero_total_slides = g:posero_total_slides
-            else
-                let g:posero_total_slides = g:posero_total_slides + 1
-            endif
-            let slide["options"] = slide_options
-            let new_presentation[slide_number] = slide
-            let line_number = 1
-            let slide_number = slide_number + 1
-            let slide = {}
-            let slide_options = []
-        elseif line =~ '\v^POSERO\>\>'
-            let sourceable_line = split(line, "POSERO>>")[0]
-            call add(slide_options, sourceable_line)
-        else
-            let slide[line_number] = line
-            let line_number = line_number + 1
-        endif
-    endfor
-    let g:posero_presentation =  new_presentation
-endfunction
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set filetype=vim
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
-
-
-"
-" Checking for user options, and setting mappings for
-" our newly created scratch buffer
-"
-"
-
-
-function! s:CreateBuffer()
-    enew
-	setlocal buftype=nowrite bufhidden=wipe nobuflisted noswapfile nowrap number
-    if exists("g:posero_default_mappings")
-        if g:posero_default_mappings == 1
-            nnoremap <silent> <buffer> <C-h> :call posero#PreviousSlide()<CR>
-            nnoremap <silent> <buffer> <C-l> :call posero#NextSlide()<CR>
-            nnoremap <silent> <buffer> <C-j> :call posero#NextLine()<CR>
-            nnoremap <silent> <buffer> <C-k> :call posero#PreviousLine()<CR>
-        endif
-    else
-        call s:Echo("Posero has no current mappings for flow control! Use `let g:posero_default_mappings = 1` in your .vimrc")
-    endif
-endfunction
-
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set filetype=vim
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
-
-
-"
-" Executing options and try/except blocks.
-" Surprise, surprise
-"
-
-function! s:SourceOptions()
-    for line in get(g:posero_presentation[g:posero_current_slide], "options", [])
-        try
-            execute line
-        catch /(.*)/
-            let msg = "Exception raised: " . v:exception . " Executing line >> " . line
-            call s:Echo(msg)
-        endtry
-    endfor
-endfunction
-
-" wait. was that a regular expression to catch an exception?
-
-
+    $ ceph-deploy new node1
+    [ceph_deploy.cli][INFO  ] Invoked (1.4.0): /Users/alfredo/.virtualenvs/ceph-deploy/bin/ceph-deploy new node1
+    [ceph_deploy.new][DEBUG ] Creating new cluster named ceph
+    [ceph_deploy.new][DEBUG ] Resolving host node1
+    [ceph_deploy.new][DEBUG ] Monitor node1 at 192.168.111.100
+    [ceph_deploy.new][INFO  ] making sure passwordless SSH succeeds
+    [node1][DEBUG ] connected to host: papaya.local
+    [node1][INFO  ] Running command: ssh -CT -o BatchMode=yes node1
+    [ceph_deploy.new][DEBUG ] Monitor initial members are ['node1']
+    [ceph_deploy.new][DEBUG ] Monitor addrs are ['192.168.111.100']
+    [ceph_deploy.new][DEBUG ] Creating a random mon key...
+    [ceph_deploy.new][DEBUG ] Writing initial config to ceph.conf...
+    [ceph_deploy.new][DEBUG ] Writing monitor keyring to ceph.mon.keyring...
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> set filetype=text
-POSERO>> set nonumber
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-
-
-                                   ~MMMMMMMMMMMMMMMM
-                              $MO           MM  MMZ MM
-                        NMMMMMMMMMMMMMN:   ~MZMMM     NM
-                      MMM                +MMDMM MM      M
-                    MMM                  =$MMMMZ         M:
-                MMM.                 MMMMMMMM:             MZ
-              ,?MM                M  MMMMMM M               MM
-            MMMM.            MM~    7MMMMMMII   M7    M8     M
-         MMMMMMMMD        NM        MMMMMM?M  ?M     IMMM     M~
-           MMM   MMMMMMM            MMMMMM   M       M   MM   DMN
-          MM        .MMMMM        M  MMMNM  M        M    MM   MMM
-       OMM7            .MM        ~M MMM   M         M     MN$  M $~
-       MM                MM     M  M  MM  M           MMMMM  +I  M Z
-      MM            NMMM, MM     M =M MM  M                   N= MI
-     MMM        MM       :MMM$   .M    M  M                    M  MM
-      M:      MM           M:MM   ,       D                     D  MM
-      M      MN$MN          M  M:          M                    M  .MM
-   , M$     M    :D           = M           M                   8   M.M
-   MMM      M     M             M             N                M     M M
-   MM=      M     M             N              +M            M=       MM
-   MM       MMMMMO             M   $M$    ,M8.MM ~MMMMMMMMM8          MM
-   MM       M                ?M  MMM       M     MM:                  MM?
-   M        M               MI  M   M      M    M:   M.                MM
-   M         M             M  MM    MMM    M MMM       $M OM~          :M
-   M D        M          DM  MM      MM MN M                 M          M:
-   M D          M$.    NM    MM       M                       8M         M
-   M.N                      IM MM     M                         M        M
-   M=M                      M   M:                              ,M       M
-   MDM                      MM                     .M, ?M         I:     M
-   MMM                      M                    DM     D          M     M
-   MMM                      M             =M  MMN       M   MMM.   M     M
-   ~MMZ               M     M           $N              M  O    M  I     M
-    MMM               M:    M          N.           MN M: MM     DM      M
-    MMM8              M    8          Z,    MMMMMMM,  M    N.     M      M
-     MMM              M    M         .M        M   MNM     ~MM8 .M       M
-     OMMM           ?+    M          M       IO     8MMO                 MM
-      MMM          I M   $M          M       M    ZM                     MM
-      MMM          M     M           MNM  M M  .M,                       M
-       MMD         M    M            M     Z M=   MMD$Z.               MMO
-        MM+        M    M           M      M    M,  M                 MMMM
-        MMM.       M    M  ZM =M   M     M.   ~M  MD                  MMM
-         MMMO           +MM      MM    MZ     M  M7                  OMM
-        MMMMMM             MMMZMN   8MN      M                       MM
-          MMMMMZ              =MMMMM        8~                      MMM
-           M8    ,MMM                                              MM
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set filetype=vim
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_push_on_non_fake = 1
-POSERO>> let b:posero_fake_type = '\v(.*)'
+POSERO>> "let b:posero_auto_next_line = 1
+POSERO>> let b:posero_fake_type = '\v^\s+\$'
+POSERO>> let b:posero_fake_push = 1
 
 
-"
-" We can define our own syntax
-"
 
-function! s:PoseroSyntax() abort
-  let b:current_syntax = 'posero'
-  syn match PoseroDelimeter            '\v\>{70,}'
-  syn match PoseroOptions              '\v^POSERO\>\>'
 
-  hi def link PoseroDelimeter          Error
-  hi def link PoseroOptions            Statement
-endfunction
+
+    $ ceph-deploy install node1
+    [ceph_deploy.cli][INFO  ] Invoked (1.4.0): /Users/alfredo/.virtualenvs/ceph-deploy/bin/ceph-deploy install node1
+    [ceph_deploy.install][DEBUG ] Installing stable version emperor on cluster ceph hosts node1
+    [ceph_deploy.install][DEBUG ] Detecting platform for host node1 ...
+    sudo: unable to resolve host node1
+    [node1][DEBUG ] connected to host: node1
+    [node1][DEBUG ] detect platform information from remote host
+    [node1][DEBUG ] detect machine type
+    [ceph_deploy.install][INFO  ] Distro info: Ubuntu 12.04 precise
+    [node1][INFO  ] installing ceph on node1
+    [node1][INFO  ] Running command: sudo env DEBIAN_FRONTEND=noninteractive apt-get -q install --assume-yes ca-certificates
+    [node1][DEBUG ] Reading package lists...
+    [node1][DEBUG ] Building dependency tree...
+    [node1][DEBUG ] Reading state information...
+    [node1][DEBUG ] ca-certificates is already the newest version.
+    [node1][DEBUG ] 0 upgraded, 0 newly installed, 0 to remove and 66 not upgraded.
+    [node1][INFO  ] Running command: sudo wget -O release.asc https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc
+    [node1][WARNIN] --2014-04-03 00:39:14--  https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc
+    [node1][WARNIN] Resolving ceph.com (ceph.com)... 208.113.241.137, 2607:f298:4:147::b05:fe2a
+    [node1][WARNIN] Connecting to ceph.com (ceph.com)|208.113.241.137|:443... connected.
+    [node1][WARNIN] HTTP request sent, awaiting response... 200 OK
+    [node1][WARNIN] Length: unspecified [text/plain]
+    [node1][WARNIN] Saving to: `release.asc'
+    [node1][WARNIN]
+    [node1][WARNIN]      0K .                                                      25.8M=0s
+    [node1][WARNIN]
+    [node1][WARNIN] 2014-04-03 00:39:15 (25.8 MB/s) - `release.asc' saved [1752]
+    [node1][WARNIN]
+    [node1][INFO  ] Running command: sudo apt-key add release.asc
+    [node1][DEBUG ] OK
+    [node1][DEBUG ] add deb repo to sources.list
+    [node1][INFO  ] Running command: sudo apt-get -q update
+    [node1][INFO  ] Running command: sudo env DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical apt-get -q -o Dpkg::Options::=--force-confnew --no-install-recommends --assume-yes install -- ceph ceph-mds ceph-common ceph-fs-common gdisk
+    [node1][DEBUG ] Reading package lists...
+    [node1][DEBUG ] Building dependency tree...
+    [node1][DEBUG ] Reading state information...
+    [node1][DEBUG ] The following extra packages will be installed:
+    [node1][DEBUG ]   cryptsetup-bin libaio1 libboost-thread1.46.1 libcryptsetup4
+    [node1][DEBUG ]   libgoogle-perftools0 libicu48 libjs-jquery libleveldb1 libnspr4 libnss3
+    [node1][DEBUG ]   librados2 librbd1 libreadline5 libsnappy1 libtcmalloc-minimal0 libunwind7
+    [node1][DEBUG ]   python-ceph python-flask python-jinja2 python-markupsafe python-requests
+    [node1][DEBUG ]   python-werkzeug xfsprogs
+    [node1][DEBUG ] Suggested packages:
+    [node1][DEBUG ]   javascript-common python-jinja2-doc ipython python-genshi python-lxml
+    [node1][DEBUG ]   python-memcache libjs-sphinxdoc xfsdump acl attr quota
+    [node1][DEBUG ] Recommended packages:
+    [node1][DEBUG ]   btrfs-tools ceph-fuse libcephfs1 python-pkg-resources python-gevent
+    [node1][DEBUG ]   python-openssl
+    [node1][DEBUG ] The following NEW packages will be installed:
+    [node1][DEBUG ]   ceph ceph-common ceph-fs-common ceph-mds cryptsetup-bin gdisk libaio1
+    [node1][DEBUG ]   libboost-thread1.46.1 libcryptsetup4 libgoogle-perftools0 libicu48
+    [node1][DEBUG ]   libjs-jquery libleveldb1 libnspr4 libnss3 librados2 librbd1 libreadline5
+    [node1][DEBUG ]   libsnappy1 libtcmalloc-minimal0 libunwind7 python-ceph python-flask
+    [node1][DEBUG ]   python-jinja2 python-markupsafe python-requests python-werkzeug xfsprogs
+    [node1][DEBUG ] 0 upgraded, 28 newly installed, 0 to remove and 160 not upgraded.
+    [node1][DEBUG ] Need to get 47.6 MB of archives.
+    [node1][DEBUG ] After this operation, 205 MB of additional disk space will be used.
+    [node1][DEBUG ] ceph-mds-all start/running
+    [node1][DEBUG ] Processing triggers for libc-bin ...
+    [node1][DEBUG ] ldconfig deferred processing now taking place
+    [node1][INFO  ] Running command: sudo ceph --version
+    [node1][DEBUG ] ceph version 0.72.2 (a913ded2ff138aefb8cb84d347d72164099cfd60)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+    Next steps: install monitors, format disks and fire services.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> set filetype=vim
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_auto_next_line = 1
-POSERO>> let b:posero_fake_type = '\v^(")@!'
 
 
-" Making it easier for users to call functions
-" we define as *public*
 
-function! posero#NextSlide()
-    call s:NextSlide(g:posero_current_slide + 1)
-endfunction
 
-function! posero#PreviousSlide()
-    call s:PreviousSlide(g:posero_current_slide - 1)
-endfunction
 
-function! posero#NextLine()
-    call s:Next(g:posero_current_line + 1)
-endfunction
 
-function! posero#PreviousLine()
-    call s:Previous()
-endfunction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -865,5 +779,3 @@ MM.      ,MP   MM    MM 8M"""""" `YMMMa.   MM     MM 8M     M8 MM    MM  `YMMMa.
 
 
 * Posero.vim:  http://github.com/alfredodeza/posero.vim
-* Pathogen:    http://github.com/tpope/vim-pathogen
-* :help script
