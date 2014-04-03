@@ -493,99 +493,91 @@ POSERO>> let b:posero_auto_next_line = 1
 POSERO>> set filetype=text
 POSERO>> let b:posero_push_on_non_fake = 1
 POSERO>> let b:posero_auto_next_line = 1
-POSERO>> let b:posero_fake_type = '\v^\s+\$'
+POSERO>> let b:posero_fake_type = '\v^\$'
 POSERO>> let b:posero_fake_push = 1
 
-
-
-
-
-    $ ceph-deploy new node1
-    [ceph_deploy.cli][INFO  ] Invoked (1.4.0): /Users/alfredo/.virtualenvs/ceph-deploy/bin/ceph-deploy new node1
-    [ceph_deploy.new][DEBUG ] Creating new cluster named ceph
-    [ceph_deploy.new][DEBUG ] Resolving host node1
-    [ceph_deploy.new][DEBUG ] Monitor node1 at 192.168.111.100
-    [ceph_deploy.new][INFO  ] making sure passwordless SSH succeeds
-    [node1][DEBUG ] connected to host: papaya.local
-    [node1][INFO  ] Running command: ssh -CT -o BatchMode=yes node1
-    [ceph_deploy.new][DEBUG ] Monitor initial members are ['node1']
-    [ceph_deploy.new][DEBUG ] Monitor addrs are ['192.168.111.100']
-    [ceph_deploy.new][DEBUG ] Creating a random mon key...
-    [ceph_deploy.new][DEBUG ] Writing initial config to ceph.conf...
-    [ceph_deploy.new][DEBUG ] Writing monitor keyring to ceph.mon.keyring...
+$ ceph-deploy new node1
+[ceph_deploy.cli][INFO  ] Invoked (1.4.0): /Users/alfredo/.virtualenvs/ceph-deploy/bin/ceph-deploy new node1
+[ceph_deploy.new][DEBUG ] Creating new cluster named ceph
+[ceph_deploy.new][DEBUG ] Resolving host node1
+[ceph_deploy.new][DEBUG ] Monitor node1 at 192.168.111.100
+[ceph_deploy.new][INFO  ] making sure passwordless SSH succeeds
+[node1][DEBUG ] connected to host: papaya.local
+[node1][INFO  ] Running command: ssh -CT -o BatchMode=yes node1
+[ceph_deploy.new][DEBUG ] Monitor initial members are ['node1']
+[ceph_deploy.new][DEBUG ] Monitor addrs are ['192.168.111.100']
+[ceph_deploy.new][DEBUG ] Creating a random mon key...
+[ceph_deploy.new][DEBUG ] Writing initial config to ceph.conf...
+[ceph_deploy.new][DEBUG ] Writing monitor keyring to ceph.mon.keyring...
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> set filetype=text
 POSERO>> let b:posero_push_on_non_fake = 1
 POSERO>> "let b:posero_auto_next_line = 1
-POSERO>> let b:posero_fake_type = '\v^\s+\$'
+POSERO>> let b:posero_fake_type = '\v^\$'
 POSERO>> let b:posero_fake_push = 1
 
-
-
-
-
-    $ ceph-deploy install node1
-    [ceph_deploy.cli][INFO  ] Invoked (1.4.0): /Users/alfredo/.virtualenvs/ceph-deploy/bin/ceph-deploy install node1
-    [ceph_deploy.install][DEBUG ] Installing stable version emperor on cluster ceph hosts node1
-    [ceph_deploy.install][DEBUG ] Detecting platform for host node1 ...
-    sudo: unable to resolve host node1
-    [node1][DEBUG ] connected to host: node1
-    [node1][DEBUG ] detect platform information from remote host
-    [node1][DEBUG ] detect machine type
-    [ceph_deploy.install][INFO  ] Distro info: Ubuntu 12.04 precise
-    [node1][INFO  ] installing ceph on node1
-    [node1][INFO  ] Running command: sudo env DEBIAN_FRONTEND=noninteractive apt-get -q install --assume-yes ca-certificates
-    [node1][DEBUG ] Reading package lists...
-    [node1][DEBUG ] Building dependency tree...
-    [node1][DEBUG ] Reading state information...
-    [node1][DEBUG ] ca-certificates is already the newest version.
-    [node1][DEBUG ] 0 upgraded, 0 newly installed, 0 to remove and 66 not upgraded.
-    [node1][INFO  ] Running command: sudo wget -O release.asc https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc
-    [node1][WARNIN] --2014-04-03 00:39:14--  https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc
-    [node1][WARNIN] Resolving ceph.com (ceph.com)... 208.113.241.137, 2607:f298:4:147::b05:fe2a
-    [node1][WARNIN] Connecting to ceph.com (ceph.com)|208.113.241.137|:443... connected.
-    [node1][WARNIN] HTTP request sent, awaiting response... 200 OK
-    [node1][WARNIN] Length: unspecified [text/plain]
-    [node1][WARNIN] Saving to: `release.asc'
-    [node1][WARNIN]
-    [node1][WARNIN]      0K .                                                      25.8M=0s
-    [node1][WARNIN]
-    [node1][WARNIN] 2014-04-03 00:39:15 (25.8 MB/s) - `release.asc' saved [1752]
-    [node1][WARNIN]
-    [node1][INFO  ] Running command: sudo apt-key add release.asc
-    [node1][DEBUG ] OK
-    [node1][DEBUG ] add deb repo to sources.list
-    [node1][INFO  ] Running command: sudo apt-get -q update
-    [node1][INFO  ] Running command: sudo env DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical apt-get -q -o Dpkg::Options::=--force-confnew --no-install-recommends --assume-yes install -- ceph ceph-mds ceph-common ceph-fs-common gdisk
-    [node1][DEBUG ] Reading package lists...
-    [node1][DEBUG ] Building dependency tree...
-    [node1][DEBUG ] Reading state information...
-    [node1][DEBUG ] The following extra packages will be installed:
-    [node1][DEBUG ]   cryptsetup-bin libaio1 libboost-thread1.46.1 libcryptsetup4
-    [node1][DEBUG ]   libgoogle-perftools0 libicu48 libjs-jquery libleveldb1 libnspr4 libnss3
-    [node1][DEBUG ]   librados2 librbd1 libreadline5 libsnappy1 libtcmalloc-minimal0 libunwind7
-    [node1][DEBUG ]   python-ceph python-flask python-jinja2 python-markupsafe python-requests
-    [node1][DEBUG ]   python-werkzeug xfsprogs
-    [node1][DEBUG ] Suggested packages:
-    [node1][DEBUG ]   javascript-common python-jinja2-doc ipython python-genshi python-lxml
-    [node1][DEBUG ]   python-memcache libjs-sphinxdoc xfsdump acl attr quota
-    [node1][DEBUG ] Recommended packages:
-    [node1][DEBUG ]   btrfs-tools ceph-fuse libcephfs1 python-pkg-resources python-gevent
-    [node1][DEBUG ]   python-openssl
-    [node1][DEBUG ] The following NEW packages will be installed:
-    [node1][DEBUG ]   ceph ceph-common ceph-fs-common ceph-mds cryptsetup-bin gdisk libaio1
-    [node1][DEBUG ]   libboost-thread1.46.1 libcryptsetup4 libgoogle-perftools0 libicu48
-    [node1][DEBUG ]   libjs-jquery libleveldb1 libnspr4 libnss3 librados2 librbd1 libreadline5
-    [node1][DEBUG ]   libsnappy1 libtcmalloc-minimal0 libunwind7 python-ceph python-flask
-    [node1][DEBUG ]   python-jinja2 python-markupsafe python-requests python-werkzeug xfsprogs
-    [node1][DEBUG ] 0 upgraded, 28 newly installed, 0 to remove and 160 not upgraded.
-    [node1][DEBUG ] Need to get 47.6 MB of archives.
-    [node1][DEBUG ] After this operation, 205 MB of additional disk space will be used.
-    [node1][DEBUG ] ceph-mds-all start/running
-    [node1][DEBUG ] Processing triggers for libc-bin ...
-    [node1][DEBUG ] ldconfig deferred processing now taking place
-    [node1][INFO  ] Running command: sudo ceph --version
-    [node1][DEBUG ] ceph version 0.72.2 (a913ded2ff138aefb8cb84d347d72164099cfd60)
+$ ceph-deploy install node1
+[ceph_deploy.cli][INFO  ] Invoked (1.4.0): /Users/alfredo/.virtualenvs/ceph-deploy/bin/ceph-deploy install node1
+[ceph_deploy.install][DEBUG ] Installing stable version emperor on cluster ceph hosts node1
+[ceph_deploy.install][DEBUG ] Detecting platform for host node1 ...
+sudo: unable to resolve host node1
+[node1][DEBUG ] connected to host: node1
+[node1][DEBUG ] detect platform information from remote host
+[node1][DEBUG ] detect machine type
+[ceph_deploy.install][INFO  ] Distro info: Ubuntu 12.04 precise
+[node1][INFO  ] installing ceph on node1
+[node1][INFO  ] Running command: sudo env DEBIAN_FRONTEND=noninteractive apt-get -q install --assume-yes ca-certificates
+[node1][DEBUG ] Reading package lists...
+[node1][DEBUG ] Building dependency tree...
+[node1][DEBUG ] Reading state information...
+[node1][DEBUG ] ca-certificates is already the newest version.
+[node1][DEBUG ] 0 upgraded, 0 newly installed, 0 to remove and 66 not upgraded.
+[node1][INFO  ] Running command: sudo wget -O release.asc https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc
+[node1][WARNIN] --2014-04-03 00:39:14--  https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc
+[node1][WARNIN] Resolving ceph.com (ceph.com)... 208.113.241.137, 2607:f298:4:147::b05:fe2a
+[node1][WARNIN] Connecting to ceph.com (ceph.com)|208.113.241.137|:443... connected.
+[node1][WARNIN] HTTP request sent, awaiting response... 200 OK
+[node1][WARNIN] Length: unspecified [text/plain]
+[node1][WARNIN] Saving to: `release.asc'
+[node1][WARNIN]
+[node1][WARNIN]      0K .                                                      25.8M=0s
+[node1][WARNIN]
+[node1][WARNIN] 2014-04-03 00:39:15 (25.8 MB/s) - `release.asc' saved [1752]
+[node1][WARNIN]
+[node1][INFO  ] Running command: sudo apt-key add release.asc
+[node1][DEBUG ] OK
+[node1][DEBUG ] add deb repo to sources.list
+[node1][INFO  ] Running command: sudo apt-get -q update
+[node1][INFO  ] Running command: sudo env DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical apt-get -q -o Dpkg::Options::=--force-confnew --no-install-recommends --assume-yes install -- ceph ceph-mds ceph-common ceph-fs-common gdisk
+[node1][DEBUG ] Reading package lists...
+[node1][DEBUG ] Building dependency tree...
+[node1][DEBUG ] Reading state information...
+[node1][DEBUG ] The following extra packages will be installed:
+[node1][DEBUG ]   cryptsetup-bin libaio1 libboost-thread1.46.1 libcryptsetup4
+[node1][DEBUG ]   libgoogle-perftools0 libicu48 libjs-jquery libleveldb1 libnspr4 libnss3
+[node1][DEBUG ]   librados2 librbd1 libreadline5 libsnappy1 libtcmalloc-minimal0 libunwind7
+[node1][DEBUG ]   python-ceph python-flask python-jinja2 python-markupsafe python-requests
+[node1][DEBUG ]   python-werkzeug xfsprogs
+[node1][DEBUG ] Suggested packages:
+[node1][DEBUG ]   javascript-common python-jinja2-doc ipython python-genshi python-lxml
+[node1][DEBUG ]   python-memcache libjs-sphinxdoc xfsdump acl attr quota
+[node1][DEBUG ] Recommended packages:
+[node1][DEBUG ]   btrfs-tools ceph-fuse libcephfs1 python-pkg-resources python-gevent
+[node1][DEBUG ]   python-openssl
+[node1][DEBUG ] The following NEW packages will be installed:
+[node1][DEBUG ]   ceph ceph-common ceph-fs-common ceph-mds cryptsetup-bin gdisk libaio1
+[node1][DEBUG ]   libboost-thread1.46.1 libcryptsetup4 libgoogle-perftools0 libicu48
+[node1][DEBUG ]   libjs-jquery libleveldb1 libnspr4 libnss3 librados2 librbd1 libreadline5
+[node1][DEBUG ]   libsnappy1 libtcmalloc-minimal0 libunwind7 python-ceph python-flask
+[node1][DEBUG ]   python-jinja2 python-markupsafe python-requests python-werkzeug xfsprogs
+[node1][DEBUG ] 0 upgraded, 28 newly installed, 0 to remove and 160 not upgraded.
+[node1][DEBUG ] Need to get 47.6 MB of archives.
+[node1][DEBUG ] After this operation, 205 MB of additional disk space will be used.
+[node1][DEBUG ] ceph-mds-all start/running
+[node1][DEBUG ] Processing triggers for libc-bin ...
+[node1][DEBUG ] ldconfig deferred processing now taking place
+[node1][INFO  ] Running command: sudo ceph --version
+[node1][DEBUG ] ceph version 0.72.2 (a913ded2ff138aefb8cb84d347d72164099cfd60)
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_auto_next_line = 1
@@ -778,4 +770,5 @@ MM.      ,MP   MM    MM 8M"""""" `YMMMa.   MM     MM 8M     M8 MM    MM  `YMMMa.
        `bood'
 
 
-* Posero.vim:  http://github.com/alfredodeza/posero.vim
+* Ceph:  Ceph.com
+* Ceph Sources and repos: github.com/ceph/
