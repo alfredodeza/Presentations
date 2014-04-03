@@ -617,36 +617,7 @@ POSERO>> let b:posero_auto_next_line = 1
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
-
-
-
-
-
-
-
-
+    Why is this good?
 
 
 
@@ -675,9 +646,9 @@ POSERO>> let b:posero_auto_next_line = 1
 
 
 
+    Why is this good?
 
-
-
+    * Prevents a lot of common issues and will use best practices
 
 
 
@@ -704,11 +675,40 @@ POSERO>> let b:posero_auto_next_line = 1
 
 
 
+    Why is this good?
+
+    * Prevents a lot of common issues and will use best practices
+    * Very well documented
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+    Why is this good?
+
+    * Prevents a lot of common issues and will use best practices
+    * Very well documented
+    * And **thoroughly** tested across all Ceph supported distros
 
 
 
