@@ -733,11 +733,153 @@ POSERO>> let b:posero_auto_next_line = 1
 
 
 
+    No Puppet? No Chef?
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+    Yes! Ceph has Chef cookbooks at https://github.com/ceph/ceph-cookbooks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+    Puppet is a in a different situation
+
+    Community maintained:
+
+    * https://github.com/dontalton/puppet-cephdeploy/
+    * https://github.com/enovance/puppet-ceph (2012)
+    * https://github.com/Mirantis/fuel/tree/master/deployment/puppet/ceph
+
+
+    And some modules for OpenStack:
+
+    * https://github.com/stackforge/puppet-glance/
+    * https://github.com/stackforge/puppet-cinder/
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+    ... and just recently, Ansible!
+
+    * github.com/ceph/ceph-ansible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+    So what to use then?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+    The best part, regardless of the route is that Ceph is **very** well
+    documented!
+
+    http://ceph.com/docs/
 
 
 
@@ -768,6 +910,9 @@ MM.      ,MP   MM    MM 8M"""""" `YMMMa.   MM     MM 8M     M8 MM    MM  `YMMMa.
   `"bmmd"'     `Mbod"YML.`Mbmmd' M9mmmP'   `Mbmo.JMML.`Ybmd9'.JMML  JMML.M9mmmP'       db
       MMb
        `bood'
+
+                                                                    @alfredodeza
+
 
 
 * Ceph:  Ceph.com
