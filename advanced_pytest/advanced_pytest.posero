@@ -1,0 +1,960 @@
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set background=light
+POSERO>> colorscheme morning
+POSERO>> set nonumber
+POSERO>> set filetype=text
+POSERO>> set noruler
+POSERO>> set nocursorline
+POSERO>> hi FoldColumn ctermbg=none guibg=fg
+POSERO>> hi LineNr ctermfg=8 ctermbg=NONE guifg=bg
+POSERO>> hi NonText ctermfg=bg guifg=bg
+POSERO>> set nowrap
+POSERO>> set nolinebreak
+
+
+
+
+
+
+
+
+                  888                                                  888
+                  888                                                  888
+                  888                                                  888
+     8888b.   .d88888 888  888  8888b.  88888b.   .d8888b .d88b.   .d88888
+        "88b d88" 888 888  888     "88b 888 "88b d88P"   d8P  Y8b d88" 888
+    .d888888 888  888 Y88  88P .d888888 888  888 888     88888888 888  888
+    888  888 Y88b 888  Y8bd8P  888  888 888  888 Y88b.   Y8b.     Y88b 888
+    "Y888888  "Y88888   Y88P   "Y888888 888  888  "Y8888P "Y8888   "Y88888
+
+
+
+                      888                     888
+                      888                     888
+                      888                     888
+    88888b.  888  888 888888 .d88b.  .d8888b  888888
+    888 "88b 888  888 888   d8P  Y8b 88K      888
+    888  888 888  888 888   88888888 "Y8888b. 888
+    888 d88P Y88b 888 Y88b. Y8b.          X88 Y88b.
+    88888P"   "Y88888  "Y888 "Y8888   88888P'  "Y888
+    888           888
+    888      Y8b d88P
+    888       "Y88P"
+
+
+    Alfredo Deza
+    December 2014
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+    What is py.test?
+
+    And why you should be interested?
+
+
+                .,ad88888888baa,
+            ,d8P"""        ""9888ba.
+         .a8"          ,ad88888888888a
+        aP'          ,88888888888888888a
+      ,8"           ,88888888888888888888,
+     ,8'            (888888888( )888888888,
+    ,8'             `8888888888888888888888
+    8)               `888888888888888888888,
+    8                  "8888888888888888888)
+    8                   `888888888888888888)
+    8)                    "8888888888888888
+    (b                     "88888888888888'
+    `8,        (8)          8888888888888)
+     "8a                   ,888888888888)
+       V8,                 d88888888888"
+        `8b,             ,d8888888888P'
+          `V8a,       ,ad8888888888P'
+             ""88888888888888888P"
+                  """"""""""""
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+    easier to test
+    awesome to scale into complexity when needed
+
+
+
+          {_}
+          / \
+         /   \
+        /_____\
+      {`_______`}
+       // . . \\
+      (/(__7__)\)
+      |'-' = `-'|
+      |         |
+      /\       /\
+     /  '.   .'  \
+    /_/   `"`   \_\
+   {__}###[_]###{__}
+   (_/\_________/\_)
+       |___|___|
+        |--|--|
+       (__)`(__)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=text
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v(.*)'
+
+
+
+Do you know your assertions?
+
+ self.assertEqual(a, b)
+ self.assertNotEqual(a, b)
+ self.assertTrue(x)
+ self.assertFalse(x)
+ self.assertIs(a, b)
+ self.assertIsNot(a, b)
+ self.assertIsNone(x)
+ self.assertIsNotNone(x)
+ self.assertIn(a, b)
+ self.assertNotIn(a, b)
+ self.assertIsInstance(a, b)
+ self.assertNotIsInstance(a, b)
+ self.assertRaises(exc, fun, *args, **kwds)
+ self.assertRaisesRegex(exc, r, fun, *args, **kwds)
+ self.assertWarns(warn, fun, *args, **kwds)
+ self.assertWarnsRegex(warn, r, fun, *args, **kwds)
+ self.assertLogs(logger, level)
+ self.assertMultiLineEqual(a, b)
+ self.assertSequenceEqual(a, b)
+ self.assertListEqual(a, b)
+ self.assertTupleEqual(a, b)
+ self.assertSetEqual(a, b)
+ self.assertDictEqual(a, b)
+ self.assertAlmostEqual(a, b)
+ self.assertNotAlmostEqual(a, b)
+ self.assertGreater(a, b)
+ self.assertGreaterEqual(a, b)
+ self.assertLess(a, b)
+ self.assertLessEqual(a, b)
+ self.assertRegex(s, r)
+ self.assertNotRegex(s, r)
+ self.assertCountEqual(a, b)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+         /                \
+        / /          \ \   \
+        |                  |
+       /                  /
+      |      ___\ \| | / /
+      |      /          \
+      |      |           \
+     /       |      _    |
+     |       |       \   |
+     |       |       _\ /|
+     |      __\     <_o)\o-
+     |     |             \
+      \    ||             \    assert assert assert assert
+       |   |__          _  \    /
+       |   |           (*___)  /
+       |   |       _     |    /
+       |   |    //_______/
+       |  /       | UUUUU__
+        \|        \_nnnnnn_\-\
+         |       ____________/
+         |      /
+         |_____/
+
+    Please tell me what is wrong assert
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+                                                         888            Y8P
+                                                         888
+88888b.   8888b.  888d888 8888b.  88888b.d88b.   .d88b.  888888 888d888 888 88888888  .d88b.
+888 "88b     "88b 888P"      "88b 888 "888 "88b d8P  Y8b 888    888P"   888    d88P  d8P  Y8b
+888  888 .d888888 888    .d888888 888  888  888 88888888 888    888     888   d88P   88888888
+888 d88P 888  888 888    888  888 888  888  888 Y8b.     Y88b.  888     888  d88P    Y8b.
+88888P"  "Y888888 888    "Y888888 888  888  888  "Y8888   "Y888 888     888 88888888  "Y8888
+888
+888
+888
+
+
+
+  @pytest.mark.parametrize
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+
+
+# Testing multiple scenarios that assert the same thing are perfect candidates
+# for paramtetrization. Have you ever written tests like these?
+
+
+from my_module import string_to_bool
+
+
+class TestStringToBool(object):
+
+    def test_it_detects_lowercase_yes(self):
+        assert string_to_bool('yes')
+
+    def test_it_detects_odd_case_yes(self):
+        assert string_to_bool('YeS')
+
+    def test_it_detects_uppercase_yes(self):
+        assert string_to_bool('YES')
+
+    def test_it_detects_positive_str_integers(self):
+        assert string_to_bool('1')
+
+    def test_it_detects_true(self):
+        assert string_to_bool('true')
+
+    def test_it_detects_true_with_trailing_spaces(self):
+        assert string_to_bool('true ')
+
+    def test_it_detects_true_with_leading_spaces(self):
+        assert string_to_bool(' true')
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+
+
+# The builtin pytest.mark.parametrize decorator enables parametrization of arguments
+# for a test function or method.
+
+import pytest
+from my_module import string_to_bool
+
+
+def generate_string_values():
+    return ['yes', '1', 'Yes', 'TRUE', 'TruE', 'True', 'true']
+
+
+class TestFoo(object):
+
+    @pytest.mark.parametrize('value')
+    def test_it_detects_truish_strings(self, value)
+        assert string_to_bool(value)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+
+
+# Now that we want to add leading and trailing spaces? what do we do?
+
+import pytest
+from distutils.util import strtobool
+
+
+def generate_string_values():
+    initial = ['yes', '1', 'Yes', 'TRUE', 'TruE', 'True', 'true']
+    trailing = ['%s ' % i for i in initial_strings]
+    leading = [' %s' % i for i in initial_strings]
+    return initial + trailing + leading
+
+class TestFoo(object):
+
+    @pytest.mark.parametrize('value')
+    def test_it_detects_truish_strings(self, value)
+        assert string_to_bool(value) is True
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=text
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+        /\/\/\/\/\/\
+       <            >
+        |          |
+        |          |          THIS MAGICAL FRAMEWORK BETTER SHOW ME
+        |   _  _   |          WHAT IS GOING ON HERE
+       -|_ / \/ \_ |-
+      |I|  \_/\_/  |I|
+       -|   /  \   |-
+        |   \__/   |
+        |          |
+        |          |
+        |__________|
+       /___/\__/\___\
+      /     | \|     \
+        /\  |\ | _@|#_
+       / /\ | \| |   |
+       \/  / \ / |   |
+        \_/___/   \_/
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=text
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v\$'
+
+$ py.test -v test_str_to_bool.py
+================================= test session starts ==============================
+platform darwin -- Python 2.7.5 -- py-1.4.20 -- pytest-2.5.2 -- /Users/alfredo/.virtualenvs/tmp/bin/python
+collected 21 items
+
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[yes] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[1] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[Yes] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[TRUE] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[TruE] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[True] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[true] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[yes ] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[1 ] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[Yes ] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[TRUE ] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[TruE ] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[True ] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[true ] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[ yes] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[ 1] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[ Yes] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[ TRUE] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[ TruE] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[ True] PASSED
+test_str_to_bool.py:17: TestStrToBool.test_it_detects_truish_strings[ true] PASSED
+
+============================== 21 passed in 0.04 seconds ===========================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> execute "normal zb"
+                                  .+hNMMMMMMNmhyy//ymdhyyyyyyyyyyyyyyyyyyyy
+                               .omMMMMmy+:.      `--:omdyyyyyyyyyyyyyyyysss
+                             :hMMMNy:`             `--:hmhyyssssoo+++//////
+ooooo+:-`                   `mMMd:                   `--oNo////////////////
+MMMMMMMMMmy+`                .s/                       .-/ms///////////////
+oo+++osydNMMh                           `-:/+o+/:`      .-:dy//////////////
+          --                         -oyo//+o+//++ss+`   .-:dh/////////////
+                                   .ho. /oNMMMMMMm+ -d/   .-:mh/////////+++
+                                  +h. oNNoNm/:/smMMy``d/   --:mhsssssssssss
+:shyyysso+:`                     +d`-hMMMMMMms-  +MMm `m/  `--/Nyssssssssss
+/-:. `:.`:+ys.                  -N` yMMMMMMMMMMNmMMMMy .N.  .--ymssssssssss
+ydMMNNMMNo` .yy.                os  hMMMMMMMMMMdhymmMN` d:   --+Nssssssssss
+hNMMm``:+hmo- :m-               oo  dMMNyooMMMMh-. yMM:`N.   .-:Nhsssssssss
+MMMMMNyo/..sMh -d`              :m``NMN+ydMMMMMMMMmMdo`yy    `--ymsssssssss
+MMMMMMMMMMNmMMs so               sy .dMMMMMMMMNMMMh- `yy`    `--/Nyysssssss
+MMMMMMMMMmN-shh :d                +d/`+hhyssy/oh+.`:ss-`      ---ddyyyyyyys
+MMMMMMMMMNyo`m: +d                 `:sso+/////+osss/.....`    .--oNyyyyyyyy
+hs/:yMMMMMMMmo .m/                     ``..--:-...-----:-`    .--/Nyyyyyyyy
+symMMMMMmNMh` -d/                        `....---:-----.      `--/Myyyyyyyy
+mMMMNho/:/``:yo`                        `.-:-----....`        `--/Myyyyyyyy
+....--:+osss/.`                         `.-..```              `--/Myyyyyyyy
++++///:-``.---:`                                              .--/Myyyyyyyy
+ `..------:---`                                               .--/Mosyyyyyy
+--------.....`                                                ---/Moooosyyy
+..........``                                                 `---sNooooooos
+  `` `                                                       .---mhoooooooo
+                                                             ---+Nooooooooo
+                                                            .--:dhooooooooo
+                                `:+oshddmmmmdho`           `--:dhoooooooooo
+                             -smMMMMMMMMMMMMMMMd           --:hh--/oooooooo
+                          .sNMMMMMMMMMMMMMMMMMM+          ---yh-...-/oooooo
+                         oMMMMMMMMMMMMMMNmdys/`          ---sd-......-:+ooo
+                        `mMMMMMMMNmy+:.                `---od-..........:+o
+                         `:///:-.                     .--:hdo:............:
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=text
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+        /\/\/\/\/\/\
+       <            >
+        |          |
+        |          |          OK AND FAILURES? HOW DO THEY LOOK?
+        |   _  _   |
+       -|_ / \/ \_ |-
+      |I|  \_/\_/  |I|
+       -|   /  \   |-
+        |   \__/   |
+        |          |
+        |          |
+        |__________|
+       /___/\__/\___\
+      /     | \|     \
+        /\  |\ | _@|#_
+       / /\ | \| |   |
+       \/  / \ / |   |
+        \_/___/   \_/
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=text
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v\$'
+
+$ py.test -vx test_str_to_bool.py
+=============================== test session starts ===============================
+platform darwin -- Python 2.7.5 -- py-1.4.20 -- pytest-2.5.2 -- /Users/alfredo/.virtualenvs/tmp/bin/python
+collected 21 items
+
+test_str_to_bool.py:20: TestStrToBool.test_it_detects_truish_strings[yes] PASSED
+test_str_to_bool.py:20: TestStrToBool.test_it_detects_truish_strings[1] PASSED
+test_str_to_bool.py:20: TestStrToBool.test_it_detects_truish_strings[Yes] PASSED
+test_str_to_bool.py:20: TestStrToBool.test_it_detects_truish_strings[TRUE] PASSED
+test_str_to_bool.py:20: TestStrToBool.test_it_detects_truish_strings[TruE] PASSED
+test_str_to_bool.py:20: TestStrToBool.test_it_detects_truish_strings[True] PASSED
+test_str_to_bool.py:20: TestStrToBool.test_it_detects_truish_strings[trues] FAILED
+
+==================================== FAILURES =====================================
+_______________ TestStrToBool.test_it_detects_truish_strings[trues] _______________
+
+self = <test_str_to_bool.TestStrToBool object at 0x105fcbb50>, value = 'trues'
+
+    @pytest.mark.parametrize('value', generate_string_values())
+    def test_it_detects_truish_strings(self, value):
+>       assert str_to_bool(value)
+E       assert 0
+E        +  where 0 = str_to_bool('trues')
+
+test_str_to_bool.py:22: AssertionError
+!!!!!!!!!!!!!!!!!!!!! Interrupted: stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!
+======================= 1 failed, 6 passed in 0.04 seconds ========================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> execute "normal zb"
+                                  .+hNMMMMMMNmhyy//ymdhyyyyyyyyyyyyyyyyyyyy
+                               .omMMMMmy+:.      `--:omdyyyyyyyyyyyyyyyysss
+                             :hMMMNy:`             `--:hmhyyssssoo+++//////
+ooooo+:-`                   `mMMd:                   `--oNo////////////////
+MMMMMMMMMmy+`                .s/                       .-/ms///////////////
+oo+++osydNMMh                           `-:/+o+/:`      .-:dy//////////////
+          --                         -oyo//+o+//++ss+`   .-:dh/////////////
+                                   .ho. /oNMMMMMMm+ -d/   .-:mh/////////+++
+                                  +h. oNNoNm/:/smMMy``d/   --:mhsssssssssss
+:shyyysso+:`                     +d`-hMMMMMMms-  +MMm `m/  `--/Nyssssssssss
+/-:. `:.`:+ys.                  -N` yMMMMMMMMMMNmMMMMy .N.  .--ymssssssssss
+ydMMNNMMNo` .yy.                os  hMMMMMMMMMMdhymmMN` d:   --+Nssssssssss
+hNMMm``:+hmo- :m-               oo  dMMNyooMMMMh-. yMM:`N.   .-:Nhsssssssss
+MMMMMNyo/..sMh -d`              :m``NMN+ydMMMMMMMMmMdo`yy    `--ymsssssssss
+MMMMMMMMMMNmMMs so               sy .dMMMMMMMMNMMMh- `yy`    `--/Nyysssssss
+MMMMMMMMMmN-shh :d                +d/`+hhyssy/oh+.`:ss-`      ---ddyyyyyyys
+MMMMMMMMMNyo`m: +d                 `:sso+/////+osss/.....`    .--oNyyyyyyyy
+hs/:yMMMMMMMmo .m/                     ``..--:-...-----:-`    .--/Nyyyyyyyy
+symMMMMMmNMh` -d/                        `....---:-----.      `--/Myyyyyyyy
+mMMMNho/:/``:yo`                        `.-:-----....`        `--/Myyyyyyyy
+....--:+osss/.`                         `.-..```              `--/Myyyyyyyy
++++///:-``.---:`                                              .--/Myyyyyyyy
+ `..------:---`                                               .--/Mosyyyyyy
+--------.....`                                                ---/Moooosyyy
+..........``                                                 `---sNooooooos
+  `` `                                                       .---mhoooooooo
+                                                             ---+Nooooooooo
+                                                            .--:dhooooooooo
+                                `:+oshddmmmmdho`           `--:dhoooooooooo
+                             -smMMMMMMMMMMMMMMMd           --:hh--/oooooooo
+                          .sNMMMMMMMMMMMMMMMMMM+          ---yh-...-/oooooo
+                         oMMMMMMMMMMMMMMNmdys/`          ---sd-......-:+ooo
+                        `mMMMMMMMNmy+:.                `---od-..........:+o
+                         `:///:-.                     .--:hdo:............:
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+
+  .d888  d8b          888
+  d88P"  Y8P          888
+  888                 888
+  888888 888 888  888 888888 888  888 888d888 .d88b.  .d8888b
+  888    888 `Y8bd8P' 888    888  888 888P"  d8P  Y8b 88K
+  888    888   X88K   888    888  888 888    88888888 "Y8888b.
+  888    888 .d8""8b. Y88b.  Y88b 888 888    Y8b.          X88
+  888    888 888  888  "Y888  "Y88888 888     "Y8888   88888P'
+
+
+  explicit, modular, and scalable
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+
+
+# Example test class taken from the test suite of the Pecan Framework
+
+class SecureControllerSharedPermissionsRegression(PecanTestCase):
+
+    def setUp(self):
+        super(SecureControllerSharedPermissionsRegression, self).setUp()
+        # ... a bunch of other setup here
+        # ... spawning several dozen lines
+        # ...
+        # ...
+        # ...
+        # ...
+        self.app = TestApp(make_app(RootController()))
+
+    def test_inherited_security(self):
+        assert self.app.get('/secured/', status=401).status_int == 401
+        assert self.app.get('/unsecured/').status_int == 200
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+
+
+# Example test class taken from the test suite of the Pecan Framework
+# this is how we would do it with py.test
+#
+
+@pytest.fixture(scope="function")
+def app(request):
+    # request is just the test context
+
+    def teardown():
+        print ("tearing down of test")
+        cleanup()
+
+    # register the teardown
+    request.addteardownalizer(teardown)
+
+    # Set up a fake app
+    app = TestApp(load_test_app(config))
+    return app
+
+
+class SecureControllerSharedPermissionsRegression(object):
+
+    def setup(self):
+        # ... a bunch of cother setup here
+        # ... spawning several dozen lines
+        # ...
+        # ...
+
+    def test_inherited_security(self, app):
+        assert app.get('/secured/', status=401).status_int == 401
+        assert app.get('/unsecured/').status_int == 200
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=text
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+        _
+       ( )
+        H
+        H
+       _H_
+    .-'-.-'-.
+   /         \
+  |           |
+  |   .-------'._
+  |  / /  '.' '. \
+  |  \ \ @   @ / /   What if we have a complex scenario for this framework?
+  |   '---------'    Say a database that needs to know about the app too?
+  |    _______|
+  |  .'-+-+-+|
+  |  '.-+-+-+|
+  |    """""" |
+  '-.__   __.-'
+       """
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+
+
+
+
+# Example test class taken from the test suite of the Pecan Framework
+# this is how we would do it with py.test
+#
+
+@pytest.fixture(scope="function")
+def db(app, request):
+    # `app` is the fixture the we just created, passed in
+    # to us. `request` is the same test context
+
+    def teardown():
+        print ("rolling back the database")
+        db.rollback()
+
+    # register the teardown
+    request.addteardownalizer(teardown)
+
+    # Do something with our database connection/setup
+    # and the app
+    db_engine = create_engine(
+        'localhost',
+        encoding='utf-8',
+        poolclass=NullPool)
+
+    _db.Session.bind = db_engine
+    _db.metadata.bind = _db.Session.bind
+
+    _db.Base.metadata.create_all(db_engine)
+    _db.commit()
+    _db.clear()
+
+    _db.app = app
+    return _db
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=text
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+        _
+       ( )
+        H
+        H
+       _H_
+    .-'-.-'-.
+   /         \
+  |           |
+  |   .-------'._
+  |  / /  '.' '. \
+  |  \ \ @   @ / /   This looks kind of interesting, is there anything out of the box?
+  |   '---------'
+  |    _______|
+  |  .'-+-+-+|
+  |  '.-+-+-+|
+  |    """""" |
+  '-.__   __.-'
+       """
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+
+
+
+from mock import patch
+from cStringIO import StringIO
+
+
+    # with unittest and patch
+
+    class TestOut(TestCase):
+
+        def test_some_output(self):
+            with patch('sys.stdout', new=StringIO()) as fake_out:
+                mymodule.urlprint(protocol, host, domain)
+                self.assertEqual(fake_out.getvalue(), expected_url)
+
+
+    # with py.test builtin fixture
+
+    class TestOutNicer(object):
+
+        def test_some_output(self, capsys):
+            mymodule.urlprint(protocol, host, domain)
+            out, err = capsys.readouterr()
+            assert out == expected_url
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+
+
+
+
+
+
+
+    Other nicer internal fixtures are
+
+    * tmpdir
+    * monkeypatch
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+
+
+
+
+
+
+
+    Why is this good?
+
+    * Prevents a lot of common issues and will use best practices
+    * Very well documented
+    * And **thoroughly** tested across all Ceph supported distros
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+
+       _
+      ( )
+       H
+       H
+      _H_
+   .-'-.-'-.
+  /         \
+ |           |
+ |   .-------'._
+ |  / /  '.' '. \
+ |  \ \ @   @ / /  asserts are nice
+ |   '---------'   is there anything else I can do with them?
+ |    _______|
+ |  .'-+-+-+|
+ |  '.-+-+-+|
+ |    """""" |
+ '-.__   __.-'
+      """
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+    # in a conftest.py file
+
+    def pytest_assertrepr_compare(op, left, right):
+        if isinstance(left, Foo) and isinstance(right, Foo) and op == "==":
+         return ['Comparing Foo instances:',
+                   '   vals: %s != %s' % (left.val, right.val)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=text
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_fake_type = '\v\$'
+
+
+
+
+
+$ py.test -q test_foocompare.py
+F
+================================= FAILURES =================================
+_______________________________ test_compare _______________________________
+
+    def test_compare():
+        f1 = Foo(1)
+        f2 = Foo(2)
+>       assert f1 == f2
+E       assert Comparing Foo instances:
+E            vals: 1 != 2
+
+test_foocompare.py:8: AssertionError
+1 failed in 0.01 seconds
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+
+
+
+
+    * write cleaner tests, with no pressure to use one style or the other
+    * cleaner output  - all output is captured by default
+    * extremely flexible - lots of plugins, fixtures, configuration
+    * beautiful assertions with fantastic reporting on failures
+
+
+    Fully documented at pytest.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=txt
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+                                                  ,,
+  .g8""8q.                                 mm     db                                 ,M"""b.
+.dP'    `YM.                               MM                                        89'  `Mg
+dM'      `MM `7MM  `7MM  .gP"Ya  ,pP"Ybd mmMMmm `7MM  ,pW"Wq.`7MMpMMMb.  ,pP"Ybd          ,M9
+MM        MM   MM    MM ,M'   Yb 8I   `"   MM     MM 6W'   `Wb MM    MM  8I   `"       mMMY'
+MM.      ,MP   MM    MM 8M"""""" `YMMMa.   MM     MM 8M     M8 MM    MM  `YMMMa.       MM
+`Mb.    ,dP'   MM    MM YM.    , L.   I8   MM     MM YA.   ,A9 MM    MM  L.   I8       ,,
+  `"bmmd"'     `Mbod"YML.`Mbmmd' M9mmmP'   `Mbmo.JMML.`Ybmd9'.JMML  JMML.M9mmmP'       db
+      MMb
+       `bood'
+
+                                                                    @alfredodeza
+
+
+
+* py.test:  pytest.org
+* py.test Sources and repos: https://bitbucket.org/hpk42/pytest
