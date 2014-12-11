@@ -268,7 +268,7 @@ def generate_string_values():
     return ['yes', '1', 'Yes', 'TRUE', 'TruE', 'True', 'true']
 
 
-class TestFoo(object):
+class TestStrToBool(object):
 
     @pytest.mark.parametrize('value')
     def test_it_detects_truish_strings(self, value)
@@ -293,7 +293,7 @@ def generate_string_values():
     leading = [' %s' % i for i in initial_strings]
     return initial + trailing + leading
 
-class TestFoo(object):
+class TestStrToBool(object):
 
     @pytest.mark.parametrize('value')
     def test_it_detects_truish_strings(self, value)
@@ -541,6 +541,9 @@ POSERO>> let b:posero_auto_next_line = 1
 POSERO>> set filetype=python
 
 
+
+
+
 # Example test class taken from the test suite of the Pecan Framework
 
 class SecureControllerSharedPermissionsRegression(PecanTestCase):
@@ -567,9 +570,6 @@ POSERO>> let b:posero_auto_next_line = 1
 POSERO>> set filetype=python
 
 
-# Example test class taken from the test suite of the Pecan Framework
-# this is how we would do it with py.test
-#
 
 @pytest.fixture(scope="function")
 def app(request):
@@ -643,10 +643,6 @@ POSERO>> set filetype=python
 
 
 
-
-# Example test class taken from the test suite of the Pecan Framework
-# this is how we would do it with py.test
-#
 
 @pytest.fixture(scope="function")
 def db(app, request):
@@ -780,36 +776,6 @@ POSERO>> set filetype=text
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_auto_next_line = 1
-POSERO>> set filetype=text
-
-
-
-
-
-
-
-    Why is this good?
-
-    * Prevents a lot of common issues and will use best practices
-    * Very well documented
-    * And **thoroughly** tested across all Ceph supported distros
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-POSERO>> let b:posero_push_all = 1
-POSERO>> let b:posero_auto_next_line = 1
 
 
 
@@ -846,6 +812,7 @@ POSERO>> let b:posero_auto_next_line = 1
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
 
 
 
@@ -895,7 +862,7 @@ _______________________________ test_compare _______________________________
         f2 = Foo(2)
 >       assert f1 == f2
 E       assert Comparing Foo instances:
-E            vals: 1 != 2
+E           vals: 1 != 2
 
 test_foocompare.py:8: AssertionError
 1 failed in 0.01 seconds
