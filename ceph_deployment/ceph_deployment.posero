@@ -542,7 +542,7 @@ $ ceph-deploy new node1
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> set filetype=text
 POSERO>> let b:posero_push_on_non_fake = 1
-POSERO>> "let b:posero_auto_next_line = 1
+POSERO>> let b:posero_auto_next_line = 1
 POSERO>> let b:posero_fake_type = '\v^\$'
 POSERO>> let b:posero_fake_push = 1
 
