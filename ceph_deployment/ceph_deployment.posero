@@ -323,7 +323,7 @@ POSERO>> let b:posero_auto_next_line = 1
       |I|  \_/\_/  |I|        That self-heals
        -|   /  \   |-
         |   \__/   |
-        |          |          And has automatic balancing
+        |          |          Automatic balancing
         |          |
         |__________|
        /___/\__/\___\
