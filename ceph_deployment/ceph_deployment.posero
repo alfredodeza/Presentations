@@ -323,7 +323,7 @@ POSERO>> let b:posero_auto_next_line = 1
       |I|  \_/\_/  |I|        That self-heals
        -|   /  \   |-
         |   \__/   |
-        |          |          And automatic balancing
+        |          |          And has automatic balancing
         |          |
         |__________|
        /___/\__/\___\
@@ -332,6 +332,66 @@ POSERO>> let b:posero_auto_next_line = 1
        / /\ | \| |   |
        \/  / \ / |   |
         \_/___/   \_/
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+        /\/\/\/\/\/\
+       <            >
+        |          |
+        |          |          SELF MANAGEMENT OF COURSE!
+        |   _  _   |
+       -|_ / \/ \_ |-
+      |I|  \_/\_/  |I|        That self-heals
+       -|   /  \   |-
+        |   \__/   |
+        |          |          Automatic balancing
+        |          |
+        |__________|
+       /___/\__/\___\         Runs on commodity hardware
+      /     | \|     \
+        /\  |\ | _@|#_
+       / /\ | \| |   |
+       \/  / \ / |   |
+        \_/___/   \_/
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+
+
+
+        /\/\/\/\/\/\
+       <            >
+        |          |
+        |          |          SELF MANAGEMENT OF COURSE!
+        |   _  _   |
+       -|_ / \/ \_ |-
+      |I|  \_/\_/  |I|        That self-heals
+       -|   /  \   |-
+        |   \__/   |
+        |          |          Automatic balancing
+        |          |
+        |__________|
+       /___/\__/\___\         Runs on commodity hardware
+      /     | \|     \
+        /\  |\ | _@|#_
+       / /\ | \| |   |        Smart (decentralized) data placement with the
+       \/  / \ / |   |        CRUSH algorithm
+        \_/___/   \_/
+
 
 
 
@@ -791,7 +851,7 @@ POSERO>> let b:posero_auto_next_line = 1
 
 
 
-    Puppet is a in a different situation
+    Puppet is in a different situation
 
     Community maintained:
 
