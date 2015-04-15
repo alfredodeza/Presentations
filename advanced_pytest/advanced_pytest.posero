@@ -289,8 +289,8 @@ from distutils.util import strtobool
 
 def generate_string_values():
     initial = ['yes', '1', 'Yes', 'TRUE', 'TruE', 'True', 'true']
-    trailing = ['%s ' % i for i in initial_strings]
-    leading = [' %s' % i for i in initial_strings]
+    trailing = ['%s ' % i for i in initial]
+    leading = [' %s' % i for i in leading]
     return initial + trailing + leading
 
 class TestStrToBool(object):
