@@ -1,0 +1,1301 @@
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> colorscheme solarized
+POSERO>> set nonumber
+POSERO>> set filetype=text
+POSERO>> set noruler
+POSERO>> set nocursorline
+POSERO>> hi FoldColumn ctermbg=none guibg=fg
+POSERO>> hi LineNr ctermfg=8 ctermbg=NONE guifg=bg
+POSERO>> hi NonText ctermfg=bg guifg=bg
+POSERO>> set nowrap
+POSERO>> set nolinebreak
+
+
+
+
+
+   e  eeeeeee eeeee eeeee eeeee eeeee e  eeeee  e     eeee
+   8  8  8  8 8   8 8  88 8   " 8   " 8  8   8  8     8
+   8e 8e 8  8 8eee8 8   8 8eeee 8eeee 8e 8eee8e 8e    8eee
+   88 88 8  8 88    8   8    88    88 88 88   8 88    88
+   88 88 8  8 88    8eee8 8ee88 8ee88 88 88eee8 88eee 88ee
+
+   8""""8
+   8    8 e    e eeeee e   e eeeee eeeee
+   8eeee8 8    8   8   8   8 8  88 8   8
+   88     8eeee8   8e  8eee8 8   8 8e  8
+   88       88     88  88  8 8   8 88  8
+   88       88     88  88  8 8eee8 88  8
+
+
+    Alfredo Deza
+    March 2016
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+
+
+
+
+    What is actually "impossible" in Python?
+
+    And why this might be interesting?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_syntax = "konira"
+POSERO>> set filetype=konira
+POSERO>> set number
+
+import os
+import inspect
+
+
+describe "running a spec suite":
+
+
+    before all:
+        self.cwdir    = os.getcwd()
+        self.cwfile   = inspect.getfile(inspect.currentframe())
+
+
+    before each:
+        self.runner = Runner(None, {})
+
+
+    it "appends an error when it raises at class collection":
+        self.runner.paths = [self.cwdir]
+        self.runner.run()
+        assert len(self.runner.errors) == 1
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+
+
+
+
+    What is actually "impossible" in Python?
+
+    And why this might be interesting?
+
+
+
+    * I love tests, but was told that a testing DSL that was not valid Python was
+      not possible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+
+
+
+
+    What is actually "impossible" in Python?
+
+    And why this might be interesting?
+
+
+
+    * I love tests, but was told that a testing DSL that was not valid Python was
+      not possible
+
+    * Writing a DSL can be quite difficult, but doable!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+
+
+
+
+    What is actually "impossible" in Python?
+
+    And why this might be interesting?
+
+
+
+    * I love tests, but was told that a testing DSL that was not valid Python was
+      not possible
+
+    * Writing a DSL can be quite difficult, but doable!
+
+    * I had to learn about poking inside exception objects, and loading dynamic code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+
+
+
+
+    What is actually "impossible" in Python?
+
+    And why this might be interesting?
+
+
+
+    * I love tests, but was told that a testing DSL that was not valid Python was
+      not possible
+
+    * Writing a DSL can be quite difficult, but doable!
+
+    * I had to learn about poking inside exception objects, and loading dynamic code
+
+    * And provide a test runner and a nice framework that understood all of this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+
+
+
+
+
+
+    This presentation is about internals of a project called Konira.
+
+    It is not longer maintained, please don't use it :)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+                            ,
+                           //\
+                          / | ;
+                          | /_|
+                        .-"`  `"-.
+                      /`          `\
+                     /              \
+               .-.,_|      .-""""-. |
+              |     `",_,-'  (((-. '(
+               \ (`"=._.'/   (  (o>'-`"#   IT IS TOO MAGICAL
+    ,           '.`"-'` /     `--`  '==;
+   /\\            `'--'`\         _.'~~
+  / | \                  `.,___,-}
+  | |  |                   )  {  }
+   \ \ (.--==---==-------=' o {  }
+    ",/` (_) (_)  (_)    (_)   \ /
+     / ()   o   ()    ()        ^|
+     \   ()  (    () o        ;  /
+      `\      \         ;    / } |
+        )      \       /   /`  } /
+     ,-'       |=,_   |   /,_ ,'/
+     |    _,.-`/   `"=\   \\   \
+     | ."` \  |        \   \`\  \
+     | |    \ \         `\  \ `\ \
+     | |     \ \          `\ \  \ \
+     | |      \ \           \ \  \ \
+     | |       \ \           \ \  \ \
+     | |        \ \           \ \  \ \
+     | |         ) \           \ \  ) \
+     `) \        ^ww            ) \ ^ww
+      ^ww                       ^ww
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+
+
+
+
+
+
+  eeeee e   e eeee
+    8   8   8 8
+    8e  8eee8 8eee
+    88  88  8 88
+    88  88  8 88ee
+
+
+  eeeee eeeee  eeeee eeeee eeeee e     eeeee eeeee eeeee eeeee
+    8   8   8  8   8 8   8 8   " 8     8   8   8   8  88 8   8
+    8e  8eee8e 8eee8 8e  8 8eeee 8e    8eee8   8e  8   8 8eee8e
+    88  88   8 88  8 88  8    88 88    88  8   88  8   8 88   8
+    88  88   8 88  8 88  8 8ee88 88eee 88  8   88  8eee8 88   8
+
+
+
+  (this was pretty tricky)
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+# the very very boring translator function doesn't show us much
+
+dispatcher={NAME: process_name, STRING: process_string, OP: process_operator}
+
+
+
+def translate(readline):
+    result     = []
+    last_kw    = None
+    last_token = None
+    last_type  = None
+    descr_obj  = False
+
+    for tokenum, value, _, _, _ in generate_tokens(readline):
+        process = dispatcher.get(tokenum, process_default)
+
+        result, descr_obj, last_kw = process(result, value, last_token, tokenum, last_type, descr_obj, last_kw)
+
+        last_token = value
+        last_type  = tokenum
+
+    return result
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> let b:posero_syntax="konira"
+POSERO>> set nonumber
+
+
+
+
+
+# remember this weird 'describe' syntax?
+
+describe "running a spec suite":
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+# it is actually a class!
+
+def process_name(result, value, last_token, tokenum, last_type, descr_obj, last_kw):
+    # From Describe to class - includes inheritance
+    if value == 'describe':
+        last_kw = 'describe'
+        result.extend(([tokenum, 'class'],))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+
+
+# it is actually a class!
+
+def process_name(result, value, last_token, tokenum, last_type, descr_obj, last_kw):
+    # From Describe to class - includes inheritance
+    if value == 'describe':
+        last_kw = 'describe'
+        result.extend(([tokenum, 'class'],))
+
+# SORCERY SORCERY SORCERY  SORCERY  SORCERY  SORCERY  SORCERY  SORCERY  SORCERY
+#                               __---__
+#                            _-       _--______
+#                       __--( /     \ )XXXXXXXXXXXXX_
+#                     --XXX(   O   O  )XXXXXXXXXXXXXXX-
+#                    /XXX(       U     )        XXXXXXX\
+#                  /XXXXX(              )--_  XXXXXXXXXXX\
+#                 /XXXXX/ (      O     )   XXXXXX   \XXXXX\
+#                 XXXXX/   /            XXXXXX   \__ \XXXXX----
+#                 XXXXXX__/          XXXXXX         \__----  -
+#         ---___  XXX__/          XXXXXX      \__         ---
+#           --  --__/   ___/\  XXXXXX            /  ___---=
+#             -_    ___/    XXXXXX              '--- XXXXXX
+#               --\/XXX\ XXXXXX                      /XXXXX
+#                 \XXXXXXXXX                        /XXXXX/
+#                  \XXXXXX                        _/XXXXX/
+#                    \XXXXX--__/              __-- XXXX/
+#                     --XXXXXXX---------------  XXXXX--
+#                        \XXXXXXXXXXXXXXXXXXXXXXXX-
+#                          --XXXXXXXXXXXXXXXXXX-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+# Same deal with the other pieces like skip, before, and after
+
+    # Skip if Constructors
+    elif value == 'skip':
+        result.extend(([tokenum, 'def'],))
+
+    elif last_token == 'skip' and value == 'if':
+        result.extend(([tokenum, '_skip_if'],
+                       [OP, '('],
+                       [NAME, 'self'],
+                       [OP, ')']))
+
+    # Before Constructors
+    elif value == 'before':
+        result.extend(([tokenum, 'def'],))
+
+    elif last_token == 'before':
+        result.extend(([tokenum, '_before_%s' % value],
+                       [OP, '('],
+                       [NAME, 'self'],
+                       [OP, ')']))
+
+    # After Constructors
+    elif value == 'after':
+        result.extend(([tokenum, 'def'],))
+
+    elif last_token == 'after':
+        result.extend(([tokenum, '_after_%s' % value],
+                       [OP, '('],
+                       [NAME, 'self'],
+                       [OP, ')']))
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set nonumber
+
+
+# The code abstracts things a bit, this is what it really means
+
+
+"describe 'my test'" -> "class Case_my_test(object):"
+
+"skip if"     -> "def _skip_if(self):"
+
+"before all"  -> "def _before_all(self):"
+
+"before each" -> "def _before_each(self):"
+
+"after all"   -> "def _after_all(self):"
+
+"after each"  -> "def _after_each(self):"
+
+"skip if"     -> "def _skip_if(self):"
+
+"skip if"     -> "def _skip_if(self):"
+
+"skip if"     -> "def _skip_if(self):"
+
+"it 'runs'"   -> "def it_runs(self):"
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+
+
+
+
+
+
+  eeeee e   e eeee
+    8   8   8 8
+    8e  8eee8 8eee
+    88  88  8 88
+    88  88  8 88ee
+
+
+  eeee eeeee e     e     eeee eeee eeeee eeeee eeeee
+  8  8 8  88 8     8     8    8  8   8   8  88 8   8
+  8e   8   8 8e    8e    8eee 8e     8e  8   8 8eee8e
+  88   8   8 88    88    88   88     88  8   8 88   8
+  88e8 8eee8 88eee 88eee 88ee 88e8   88  8eee8 88   8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+class FileCollector(list):
+
+    # ....
+
+    def _collect(self):
+        if os.path.isfile(self.path):
+            self.append(self.path)
+            return
+
+        # Local is faster
+        walk = os.walk
+        join = os.path.join
+        path = self.path
+        levels_deep = 0
+
+        for root, dirs, files in walk(path):
+            levels_deep += 1
+
+            # Start checking for Python packages after 3 levels
+            if levels_deep > 2:
+                if not '__init__.py' in files:
+                    continue
+            for item in files:
+                absolute_path = join(root, item)
+                if not self.valid_module_name.match(item):
+                    continue
+                self.append(absolute_path)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set number
+POSERO>> let filetype=python
+
+
+# Now that file paths have been collected we can see what code they have
+# you will see why soon my friend
+
+def globals_from_file(filename):
+    # be aware of same file path for relative imports
+    old_path0   = sys.path[0]
+    module_name = os.path.dirname(filename)
+    if module_name not in sys.path:
+        sys.path[0] = module_name
+
+    _file = open(filename)
+    data  = tokenize.untokenize(translate(_file.readline))
+    compiled = compile(data, filename, "exec")
+    globals_ = {}
+    exec(compiled, globals_)
+
+    # restore the original sys.path
+    sys.path[0] = old_path0
+    return globals_
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set number
+POSERO>> let filetype=python
+
+
+# The collected globals allows us to see if we have a valid class and method
+# Similar to what unittest and py.test conventions have (prefix test classes
+# with Test and test methods with test_)
+
+
+def _collect_classes(path):
+    global_modules = map(globals_from_file, [path])
+    return [i for i in global_modules[0].values() if callable(i) and i.__name__.startswith('Case_')]
+
+
+
+def _collect_methods(module):
+    valid_method_name = re.compile(r'it_[_a-z]\w*$', re.IGNORECASE)
+    return [i for i in dir(module) if valid_method_name.match(i)]
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set number
+POSERO>> let filetype=python
+
+
+# Now we can pass in a filename and an optional class_name or method_name
+# and "collect" just the actual tests we want
+
+
+def get_classes(filename, class_name):
+    if class_name:
+        classes = [i for i in _collect_classes(filename)
+                    if class_name == get_class_name(i)]
+    else:
+        classes = [i for i in _collect_classes(filename)]
+
+    return classes
+
+
+
+def get_methods(suite, method_name):
+    if method_name:
+        methods = [i for i in _collect_methods(suite)
+                    if i == method_name]
+    else:
+        methods = _collect_methods(suite)
+
+    return methods
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set number
+POSERO>> let filetype=python
+
+
+# At this point we now have filenames, and classes and methods. What do we
+# do with them?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set number
+POSERO>> let filetype=python
+
+
+# At this point we now have filenames, and classes and methods. What do we
+# do with them?
+
+
+    def run(self):
+        self.timer = StopWatch()
+        for f in self.paths:
+            try:
+                classes = get_classes(f, self.class_name)
+            except Exception, e:
+                self.total_errors += 1
+                self.errors.append(
+                    dict(
+                        failure   = sys.exc_info(),
+                        exc_name  = e.__class__.__name__
+                       )
+                    )
+                continue
+            try:
+                for case in classes:
+                    self.run_suite(case)
+            except KoniraFirstFail:
+                break
+
+        self.elapsed = self.timer.elapsed()
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set number
+POSERO>> let filetype=python
+
+
+# But that method doesn't really show us what is it doing with the classes and methods.
+# Really, how do we run this thing?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set number
+POSERO>> let filetype=python
+
+
+# We initialize code! and do a bunch of legwork to "setup" the tests
+
+    def run_suite(self, case):
+        # Initialize the test class
+        suite = case()
+
+        # check test environment setup
+        environ = TestEnviron(suite)
+
+        methods = get_methods(suite, self.method_name)
+        if not methods: return
+
+        # Name the class
+        class_name = suite.__class__.__name__
+        self.writer.out_case(class_name)
+
+        # Are we skipping?
+        if safe_skip_call(environ.set_skip_if):
+            self.writer.skipping()
+            return
+
+        let_map = get_let_attrs(suite)
+
+        # Set before all if any
+        self.safe_environ_call(environ.set_before_all)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set number
+POSERO>> let filetype=python
+
+
+# We loop over the tests, catching exceptions as they are raised
+
+        for test in methods:
+            test_start_time = StopWatch(raw=True)
+            suite = set_let_attrs(suite, let_map)
+            self.total_cases += 1
+
+            # Set before each if any
+            self.safe_environ_call(environ.set_before_each)
+
+            try:
+                getattr(suite, test)()
+                test_elapsed_time = Decimal(str(test_start_time.elapsed()))
+                self.writer.green_spec(test)
+
+            except BaseException, e:
+                test_elapsed_time = Decimal(str(test_start_time.elapsed()))
+                trace = inspect.trace()[-1]
+                self.total_failures += 1
+                self.writer.red_spec(test)
+                self.failures.append(
+                    dict(
+                        failure  = sys.exc_info(),
+                        trace    = trace,
+                        exc_name = e.__class__.__name__
+                       )
+                    )
+                if self.config.get('first_fail'):
+                    raise KoniraFirstFail
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set number
+POSERO>> let filetype=python
+
+
+# After all tests are run, we save the profiling information
+# and perform tear down for each group as they ran
+
+            # Save profiling info
+            self.profiles.append((test_elapsed_time,
+                                  test,
+                                  class_name))
+
+            # Set after each if any
+            self.safe_environ_call(environ.set_after_each)
+
+        # Set after all if any
+        self.safe_environ_call(environ.set_after_all)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+
+
+
+
+
+  eeeee  eeee eeeee eeeee eeeee eeeee e  eeeee eeeee
+  8   8  8    8   8 8  88 8   8   8   8  8   8 8   8
+  8eee8e 8eee 8eee8 8   8 8eee8e  8e  8e 8e  8 8e
+  88   8 88   88    8   8 88   8  88  88 88  8 88 "8
+  88   8 88ee 88    8eee8 88   8  88  88 88  8 88ee8
+
+  or how to handle nicely your crappy tests
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+
+
+# your tests are spitting out text that shall not be around in a clean output
+# so we do what?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+
+
+# your tests are spitting out text that shall not be around in a clean output
+# so we do what?
+
+# we capture it!
+
+    def capture(self):
+        if self.config['capturing'] is True:
+            sys.stderr = self._stderr_buffer
+            sys.stdout = self._stdout_buffer
+            sys.stdin  = DontReadFromInput()
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+
+
+# your tests are spitting out text that shall not be around in a clean output
+# so we do what?
+
+# we capture it!
+
+    def capture(self):
+        if self.config['capturing'] is True:
+            sys.stderr = self._stderr_buffer
+            sys.stdout = self._stdout_buffer
+            sys.stdin  = DontReadFromInput()
+
+
+# And if your tests access it, we raise exceptions! YESSSSSS EXCEPTIONS
+
+class DontReadFromInput(object):
+    """Temporary stub class.  Ideally when stdin is accessed, the
+    capturing should be turned off, with possibly all data captured
+    so far sent to the screen.  This should be configurable, though,
+    because in automated test runs it is better to crash than
+    hang indefinitely.
+    """
+    msg = "reading from stdin while output is captured (using pdb?)"
+
+
+    def flush(self, *args):
+        raise KoniraIOError(self.msg)
+
+
+    def write(self, *args):
+        raise KoniraIOError(self.msg)
+
+
+    def read(self, *args):
+        raise KoniraIOError(self.msg)
+
+
+    readline  = read
+    readlines = read
+    __iter__  = read
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+
+
+  # So what happens with all those exceptions we have been capturing for the failed tests?
+  # What to we do with those?
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+
+
+  # So what happens with all those exceptions we have been capturing for the failed tests?
+  # What to we do with those?
+
+  # we need to make them pretty
+
+class PrettyExc(object):
+
+
+    def __init__(self, exc_info, error=False, debug=False):
+        self.error = error
+        self.debug = debug
+        self.exc_type, self.exc_value, self.exc_traceback = exc_info
+        if self.error:
+            self.exc_traceback =  self._last_traceback(self.exc_traceback)
+        self.exc_traceback        = self._remove_konira_from_traceback(self.exc_traceback)
+        self.end_traceback        = self._last_traceback(self.exc_traceback)
+        self.exception_file_start = self.exc_traceback.tb_frame.f_code.co_filename
+        self.exception_line_start = self.exc_traceback.tb_lineno
+        self.exception_file_end   = self.end_traceback.tb_frame.f_code.co_filename
+        self.exception_line_end   = self.end_traceback.tb_lineno
+        self.exception_line       = self.exc_traceback.tb_lineno
+        self.exception_file       = self.exc_traceback.tb_frame.f_code.co_filename
+        self.exc_info             = exc_info
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+
+
+
+     REMEMBER: THIS IS MAGIC
+
+                               ,|
+                             //|                              ,|
+                           //,/                             -~ |
+                         // / |                         _-~   /  ,
+                       /'/ / /                       _-~   _/_-~ |
+                      ( ( / /'                   _ -~     _-~ ,/'
+                       \~\/'/|             __--~~__--\ _-~  _/,
+               ,,)))))));, \/~-_     __--~~  --~~  __/~  _-~ /
+            __))))))))))))));,>/\   /        __--~~  \-~~ _-~
+           -\(((((''''(((((((( >~\/     --~~   __--~' _-~ ~|
+  --==//////((''  .     `)))))), /     ___---~~  ~~\~~__--~
+          ))| @    ;-.     (((((/           __--~~~'~~/
+          ( `|    /  )      )))/      ~~~~~__\__---~~__--~~--_
+             |   |   |       (/      ---~~~/__-----~~  ,;::'  \         ,
+             o_);   ;        /      ----~~/           \,-~~~\  |       /|
+                   ;        (      ---~~/         `:::|      |;|      < >
+                  |   _      `----~~~~'      /      `:|       \;\_____//
+            ______/\/~    |                 /        /         ~------~
+          /~;;.____/;;'  /          ___----(   `;;;/
+         / //  _;______;'------~~~~~    |;;/\    /
+        //  | |                        /  |  \;;,\
+       (<_  | ;                      /',/-----'  _>
+        \_| ||_                     //~;~~~~~~~~~
+            `\_|                   (,~~
+                                    \~\
+                                     ~~
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+
+
+  # We "translate" our custom made names to what they were supposed to be
+  # originally.
+
+  # WITH REGEXES
+
+    def translate_exc_line(self, lines):
+        if self.error or self.debug: return lines
+        valid_file_name   = re.compile(r'\s+File\s+(.*)case[_a-z]\w*\.py', re.IGNORECASE)
+        valid_method_name = re.compile(r'(.*)\s+in\s+it_[_a-z]\w*', re.IGNORECASE)
+        valid_it_case     = re.compile(r'it_[_a-z]\w*', re.IGNORECASE)
+        rewritten_lines   = []
+        for line in lines:
+            if valid_file_name.match(line) and valid_method_name.match(line):
+                it_method = valid_it_case.search(line)
+                if it_method:
+                    rewrite_it = name_convertion(it_method.group(), capitalize=False)
+                    line = re.sub(valid_it_case, rewrite_it, line)
+                rewritten_lines.append(line)
+            else:
+                rewritten_lines.append(line)
+        return rewritten_lines
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+
+
+  # And what other type of dark magic is applied?
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+
+
+  # And what other type of dark magic is applied?
+
+  # BEHOLD TRACEBACK PURIFICATION
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=python
+POSERO>> set number
+
+
+
+
+  # And what other type of dark magic is applied?
+
+  # BEHOLD TRACEBACK PURIFICATION
+
+    def _remove_konira_from_traceback(self, traceback):
+        if self.error or self.debug: return traceback
+        konira_dir = dirname(abspath(__file__))
+
+        while True:
+            try:
+                frame    = traceback.tb_frame
+                code     = frame.f_code
+                filename = code.co_filename
+                code_dir = dirname(abspath(filename))
+                if code_dir != konira_dir:
+                    break
+                else:
+                    if traceback.tb_next is None:
+                        return traceback
+                    traceback = traceback.tb_next
+            except AttributeError:
+                return traceback
+
+        return traceback
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+POSERO>> set filetype=text
+POSERO>> set nonumber
+
+
+
+
+
+
+  e     eeee
+  8     8
+  8e    8eee
+  88    88
+  88eee 88ee
+
+
+  e     e  ee   e eeee    eeeee eeee eeeeeee eeeee
+  8     8  88   8 8       8   8 8    8  8  8 8  88
+  8e    8e 88  e8 8eee    8e  8 8eee 8e 8  8 8   8
+  88    88  8  8  88      88  8 88   88 8  8 8   8
+  88eee 88  8ee8  88ee    88ee8 88ee 88 8  8 8eee8
+
+
+  Because YOLO
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+POSERO>> set filetype=txt
+POSERO>> let b:posero_push_all = 1
+POSERO>> let b:posero_auto_next_line = 1
+
+
+                                                  ,,
+  .g8""8q.                                 mm     db                                 ,M"""b.
+.dP'    `YM.                               MM                                        89'  `Mg
+dM'      `MM `7MM  `7MM  .gP"Ya  ,pP"Ybd mmMMmm `7MM  ,pW"Wq.`7MMpMMMb.  ,pP"Ybd          ,M9
+MM        MM   MM    MM ,M'   Yb 8I   `"   MM     MM 6W'   `Wb MM    MM  8I   `"       mMMY'
+MM.      ,MP   MM    MM 8M"""""" `YMMMa.   MM     MM 8M     M8 MM    MM  `YMMMa.       MM
+`Mb.    ,dP'   MM    MM YM.    , L.   I8   MM     MM YA.   ,A9 MM    MM  L.   I8       ,,
+  `"bmmd"'     `Mbod"YML.`Mbmmd' M9mmmP'   `Mbmo.JMML.`Ybmd9'.JMML  JMML.M9mmmP'       db
+      MMb
+       `bood'
+
+                                                                    @alfredodeza
+
+
+
