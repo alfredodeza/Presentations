@@ -7,7 +7,7 @@ POSERO>> set noruler
 POSERO>> set nocursorline
 POSERO>> hi FoldColumn ctermbg=none guibg=fg
 POSERO>> hi LineNr ctermfg=8 ctermbg=NONE guifg=bg
-POSERO>> hi NonText ctermfg=bg guifg=bg
+POSERO>> hi NonText ctermfg=white guifg=bg
 POSERO>> set nowrap
 POSERO>> set nolinebreak
 
