@@ -174,11 +174,6 @@ POSERO>> set nonumber
 
 
 
-
-
-
-
-
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_auto_next_line = 1
@@ -200,12 +195,6 @@ POSERO>> set nonumber
     * Writing a DSL can be quite difficult, but doable!
 
     * I had to learn about poking inside exception objects, and loading dynamic code
-
-
-
-
-
-
 
 
 
@@ -242,12 +231,6 @@ POSERO>> set nonumber
     * I had to learn about poking inside exception objects, and loading dynamic code
 
     * And provide a test runner and a nice framework that understood all of this
-
-
-
-
-
-
 
 
 
@@ -1073,6 +1056,19 @@ POSERO>> set number
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_auto_next_line = 1
@@ -1108,10 +1104,6 @@ class PrettyExc(object):
 
 
 
-
-
-
-
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 POSERO>> let b:posero_push_all = 1
 POSERO>> let b:posero_auto_next_line = 1
@@ -1120,11 +1112,11 @@ POSERO>> set nonumber
 
 
 
-     REMEMBER: THIS IS MAGIC
 
                                ,|
                              //|                              ,|
                            //,/                             -~ |
+ REMEMBER: THIS IS MAGIC
                          // / |                         _-~   /  ,
                        /'/ / /                       _-~   _/_-~ |
                       ( ( / /'                   _ -~     _-~ ,/'
